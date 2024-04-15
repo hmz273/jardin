@@ -9,59 +9,58 @@ const Footer = () => {
       <div className="mx-auto w-full px-5">
         <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           <div>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
-              <li className="mb-4">
-                <p className=" hover:underline">
-                  Avenue Echouhada-Quartier De L'hivernage, L’Hivernage, 40000
-                  Marrakech, Maroc
+            <ul>
+              <li className="mb-4 pb-6">
+                <p className="font-normal text-[18px] leading-[28.8px] text-[#3C3A34] hover:underline">
+                Km 13 Route De L’Ourika – Canal De Zaraba, 40000 Aït Hamid, Maroc
                 </p>
               </li>
-              <li className="mb-4">
-                <p className="hover:underline">
+              <li>
+                <p className="hover:underline font-normal text-[18px] leading-[19.8px] text-[#13191D]">
                   Visualiser notre établissement sur la carte
                 </p>
               </li>
             </ul>
           </div>
           <div>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+            <ul>
               <li className="mb-4">
-                <p className="hover:underline">Politique de confidentialité</p>
+                <p className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">Politique de confidentialité</p>
               </li>
               <li className="mb-4">
-                <p className="hover:underline">Plan de site</p>
+                <p className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">Plan de site</p>
               </li>
             </ul>
           </div>
           <div>
-            <ul className="text-gray-500 dark:text-gray-400 font-medium">
+            <ul>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Nos chambres
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Nos services
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Offres
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Evenement
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Galerie
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Contact
                 </a>
               </li>
@@ -83,7 +82,7 @@ const Footer = () => {
                   />
                 </svg>
 
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Facebook
                 </a>
               </li>
@@ -100,14 +99,14 @@ const Footer = () => {
                     fill="#3D505A"
                   />
                 </svg>
-                <a href="#" className="hover:underline">
+                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Instagram
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <p className="text-[#A8A8A8] py-4">
+        <p className="text-[#A8A8A8] font-normal text-[18px] leading-[28.8px] py-4">
           Hôtel de charme en Provence , Cours de cuisine en Provence ,
           Restaurant Gastronomique Var , Organisation de séminaire en Provence ,
           Restaurant gastronomique en Provence , Hôtel Spa en Provence , Hôtel
@@ -120,7 +119,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <a
               href="#"
-              className="text-[#A8A8A8] py-4 inline-flex items-center justify-center  mr-3 text-base font-medium rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="text-[#3C3A34] py-4 inline-flex items-center justify-center  mr-3 font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Technology Providers
               <svg
@@ -152,7 +151,7 @@ const Footer = () => {
 
             <a
               href="#"
-              className="text-[#A8A8A8]  inline-flex items-center justify-center  mr-3 text-base font-medium rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="text-[#3C3A34]  inline-flex items-center justify-center  mr-3 font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Politique de confidentialité
               <svg
@@ -182,7 +181,7 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <p className="mt-4 ml-8 inline-flex items-center justify-center  mr-3 text-base font-medium text-gray-800 rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+          <p className="mt-4 ml-8 inline-flex items-center justify-center  mr-3 font-normal text-[18px] leading-[28.8px] text-[#3C3A34] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
             © 2024 - Powred By{" "}
             <a href="#" className="pl-2">
               <svg

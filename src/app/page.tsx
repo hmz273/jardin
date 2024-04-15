@@ -13,11 +13,13 @@ import Contact from "./compoments/Contact";
 import OfferSp from "./compoments/OfferSp";
 import Footer from "./compoments/Footer";
 import BottomNav from "./compoments/BottomNav";
+import Nav from "./compoments/Nav";
 
 export default function Home() {
   return (
     <>
-    <NavBar/>
+    {/* <NavBar/> */}
+    <Nav />
     <Hero/>
     <About/>
     <Rooms/>

@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link'
 import img from "../../../public/image.png";
 
 const Rooms = () => {
   return (
-    <section>
+    <section className="md:mt-48 md:h-[998px] md:top-[1782px] md:left[0.5px]">
       <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mb-4 md:text-5xl text-3xl tracking-tight font-normal text-gray-700">
+          <h2 className="mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-[#13191D]">
             Chambres Et Suites
           </h2>
         </div>
@@ -16,10 +17,10 @@ const Rooms = () => {
         {/* <!-- component --> */}
         <div className="flex flex-col bg-white m-auto p-auto w-full">
           <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
-            <div className="flex flex-nowrap lg:ml-40 md:ml-20 ml-10 m-0 gap-4">
-              <div className="inline-block px-3 md:w-[50rem] w-[18rem]">
+            <div className="flex flex-nowrap md:h-[715px] md:gap-[30px]">
+              <div className="inline-block px-3 md:w-[856px] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
-                  <div className="md:w-[50rem] w-[18rem]">
+                  <div className="md:w-[856px] w-[18rem]">
                     <Image
                       className="md:h-[488px] md:w-[856px] h-80"
                       src={img}
@@ -27,28 +28,28 @@ const Rooms = () => {
                     />
 
                     <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 ">
+                      <h5 className="mb-2 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#13191D]">
                         Suite Senior
                       </h5>
-                      <div className="md:flex space-x-5 text-center mx-auto max-w-sm pl-16 py-2">
+                      <div className="md:flex space-x-5 text-center mx-auto gap-[60px] max-w-md pl-16 md:py-6 py-2">
                         <p
                           style={{ fontFamily: "Quicksand, sans-serif" }}
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                         >
                           Surface : 220m²
                         </p>
                         <p
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                           style={{ fontFamily: "Quicksand, sans-serif" }}
                         >
                           Personnes Max : 3
                         </p>
                       </div>
 
-                      <a
+                      <Link
                         style={{ fontFamily: "Quicksand, sans-serif" }}
-                        href="#"
-                        className="inline-flex justify-center items-center text-center text-gray-800 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium text-sm px-10 py-2.5 me-2 mb-2"
+                        href="/room"
+                        className="inline-flex justify-center items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D] px-10 py-2.5 me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -64,14 +65,14 @@ const Rooms = () => {
                             fill="#13191D"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="inline-block px-3 md:w-[50rem] w-[18rem]">
+              <div className="inline-block px-3 md:w-[856px] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
-                  <div className="md:w-[50rem] w-[18rem]">
+                  <div className="md:w-[856px] w-[18rem]">
                     <Image
                       className="md:h-[488px] md:w-[856px] h-80"
                       src={img}
@@ -79,28 +80,28 @@ const Rooms = () => {
                     />
 
                     <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 ">
+                      <h5 className="mb-2 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#13191D]">
                         Suite Senior
                       </h5>
-                      <div className="md:flex space-x-5 text-center mx-auto max-w-sm pl-16 py-2">
+                      <div className="md:flex space-x-5 text-center mx-auto gap-[60px] max-w-md pl-16 md:py-6 py-2">
                         <p
                           style={{ fontFamily: "Quicksand, sans-serif" }}
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                         >
                           Surface : 220m²
                         </p>
                         <p
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                           style={{ fontFamily: "Quicksand, sans-serif" }}
                         >
                           Personnes Max : 3
                         </p>
                       </div>
 
-                      <a
+                      <Link
                         style={{ fontFamily: "Quicksand, sans-serif" }}
-                        href="#"
-                        className="inline-flex justify-center items-center text-center text-gray-800 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium text-sm px-10 py-2.5 me-2 mb-2"
+                        href="/room"
+                        className="inline-flex justify-center items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D] px-10 py-2.5 me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -116,14 +117,14 @@ const Rooms = () => {
                             fill="#13191D"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="inline-block px-3 md:w-[50rem] w-[18rem]">
+              <div className="inline-block px-3 md:w-[856px] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
-                  <div className="md:w-[50rem] w-[18rem]">
+                  <div className="md:w-[856px] w-[18rem]">
                     <Image
                       className="md:h-[488px] md:w-[856px] h-80"
                       src={img}
@@ -131,28 +132,28 @@ const Rooms = () => {
                     />
 
                     <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 ">
+                      <h5 className="mb-2 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#13191D]">
                         Suite Senior
                       </h5>
-                      <div className="md:flex space-x-5 text-center mx-auto max-w-sm pl-16 py-2">
+                      <div className="md:flex space-x-5 text-center mx-auto gap-[60px] max-w-md pl-16 md:py-6 py-2">
                         <p
                           style={{ fontFamily: "Quicksand, sans-serif" }}
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                         >
                           Surface : 220m²
                         </p>
                         <p
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                           style={{ fontFamily: "Quicksand, sans-serif" }}
                         >
                           Personnes Max : 3
                         </p>
                       </div>
 
-                      <a
+                      <Link
                         style={{ fontFamily: "Quicksand, sans-serif" }}
-                        href="#"
-                        className="inline-flex justify-center items-center text-center text-gray-800 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium text-sm px-10 py-2.5 me-2 mb-2"
+                        href="/room"
+                        className="inline-flex justify-center items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D] px-10 py-2.5 me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -168,14 +169,14 @@ const Rooms = () => {
                             fill="#13191D"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="inline-block px-3 md:w-[50rem] w-[18rem]">
+              <div className="inline-block px-3 md:w-[856px] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
-                  <div className="md:w-[50rem] w-[18rem]">
+                  <div className="md:w-[856px] w-[18rem]">
                     <Image
                       className="md:h-[488px] md:w-[856px] h-80"
                       src={img}
@@ -183,28 +184,28 @@ const Rooms = () => {
                     />
 
                     <div className="p-5">
-                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-700 ">
+                      <h5 className="mb-2 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#13191D]">
                         Suite Senior
                       </h5>
-                      <div className="md:flex space-x-5 text-center mx-auto max-w-sm pl-16 py-2">
+                      <div className="md:flex space-x-5 text-center mx-auto gap-[60px] max-w-md pl-16 md:py-6 py-2">
                         <p
                           style={{ fontFamily: "Quicksand, sans-serif" }}
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                         >
                           Surface : 220m²
                         </p>
                         <p
-                          className="mb-3 font-normal text-gray-700"
+                          className="mb-3 font-normal text-[18px] leading-[28.8px] text-[#13191D]"
                           style={{ fontFamily: "Quicksand, sans-serif" }}
                         >
                           Personnes Max : 3
                         </p>
                       </div>
 
-                      <a
+                      <Link
                         style={{ fontFamily: "Quicksand, sans-serif" }}
-                        href="#"
-                        className="inline-flex justify-center items-center text-center text-gray-800 border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium text-sm px-10 py-2.5 me-2 mb-2"
+                        href="/room"
+                        className="inline-flex justify-center items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D] px-10 py-2.5 me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -220,7 +221,7 @@ const Rooms = () => {
                             fill="#13191D"
                           />
                         </svg>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

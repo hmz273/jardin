@@ -1,16 +1,12 @@
-import React from "react";
+import React from 'react'
 import Image from "next/image";
-import img from "../../../public/image1.png";
+import img from "../../../../public/image.png";
 
 const Gallery = () => {
   return (
-    <section id="gellery" className="bg-[#3D505A]">
+    <section>
       <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
-        <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-white">
-            Galerie Photos
-          </h2>
-        </div>
+        
         {/* <!-- component --> */}
         <div className="flex flex-col m-auto p-auto">
           <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
@@ -18,35 +14,35 @@ const Gallery = () => {
               <div className="inline-block px-3 md:w-[30rem] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
                   <div className="md:w-[30rem] w-[18rem]">
-                    <Image className="md:h-[29rem]" src={img} alt="" />
+                    <Image className="md:h-[23rem]" src={img} alt="" />
                   </div>
                 </div>
               </div>
               <div className="inline-block px-3 md:w-[30rem] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
                   <div className="md:w-[30rem] w-[18rem]">
-                    <Image className="md:h-[29rem]" src={img} alt="" />
+                    <Image className="md:h-[23rem]" src={img} alt="" />
                   </div>
                 </div>
               </div>
               <div className="inline-block px-3 md:w-[30rem] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
                   <div className="md:w-[30rem] w-[18rem]">
-                    <Image className="md:h-[29rem]" src={img} alt="" />
+                    <Image className="md:h-[23rem]" src={img} alt="" />
                   </div>
                 </div>
               </div>
               <div className="inline-block px-3 md:w-[30rem] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
                   <div className="md:w-[30rem] w-[18rem]">
-                    <Image className="md:h-[29rem]" src={img} alt="" />
+                    <Image className="md:h-[23rem]" src={img} alt="" />
                   </div>
                 </div>
               </div>
               <div className="inline-block px-3 md:w-[30rem] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
                   <div className="md:w-[30rem] w-[18rem]">
-                    <Image className="md:h-[29rem]" src={img} alt="" />
+                    <Image className="md:h-[23rem]" src={img} alt="" />
                   </div>
                 </div>
               </div>
@@ -55,7 +51,7 @@ const Gallery = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery

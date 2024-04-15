@@ -25,7 +25,7 @@ const Hero = () => {
         className="h-svh z-0 mx-auto relative w-full"
         data-carousel="slide"
       >
-        <div className="relative h-svh w-auto md:h-dvh overflow-hidden md:brightness-50">
+        <div className="relative h-svh w-auto md:h-[880px] overflow-hidden md:brightness-50">
           {/* <!-- Item 1 --> */}
           <div className="hidden duration-700 ease-in-out " data-carousel-item>
             <Image
@@ -168,12 +168,12 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="hidden lg:flex absolute bottom-6 left-6 bg-white p-8">
+      <div className="hidden lg:flex absolute top-[572px] left-[21px] bg-white p-6 md:h-[274.5px] md:w-[288px]">
         <form
-          className="flex flex-col space-y-4"
+          className="flex flex-col gap-[10px]"
           style={{ fontFamily: "Quicksand, sans-serif" }}
         >
-          <h1 className="text-center text-lg leading-tight tracking-tight text-gray-600 md:text-2xl dark:text-white">
+          <h1 className="text-center tracking-tight font-light text-[15.3px] leading-[17px] text-[#3C3A34]">
             Votre comparateur simplifié
           </h1>
 
@@ -184,7 +184,7 @@ const Hero = () => {
               id="checkInDate"
               value={checkInDate}
               onChange={handleCheckInChange}
-              className="text-center px-4 py-2 border-0 bg-gray-50  block w-full ps-10 p-2.5"
+              className="text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px]  block w-full ps-10 p-2.5"
             />
 
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -199,7 +199,7 @@ const Hero = () => {
               id="checkOutDate"
               value={checkOutDate}
               onChange={handleCheckOutChange}
-              className="text-center px-4 py-2 border-0 bg-gray-50  block w-full ps-10 p-2.5"
+              className="text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px]  block w-full ps-10 p-2.5"
             />
 
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -209,7 +209,7 @@ const Hero = () => {
           <div className="flex">
             <input
               type="data"
-              className="bg-gray-50 text-gray-900 leading-none block flex-1 w-full text-sm p-2.5 "
+              className="bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px] block flex-1 w-full text-sm p-2.5 "
               value="1"
               required
             />
@@ -229,21 +229,11 @@ const Hero = () => {
               </svg>
             </span>
           </div>
-          {/* <input
-            type="number"
-            id="adults"
-            name="adults"
-            min="1"
-            className="px-4 py-2 border-0 focus:ring-2 bg-gray-50 focus:ring-gray-500"
-            value={adults}
-            required
-            placeholder="adults"
-          /> */}
 
           <button type="submit" className="">
-            <p className="px-6 py-2 text-white bg-slate-700">compare</p>
+            <p className="px-6 py-2 text-white font-semibold text-[16px] leading-[16px] bg-slate-700">compare</p>
           </button>
-          <p className="inline-flex items-center justify-center mr-3 text-gray-700 bg-primary-700 text-sm">
+          <p className="inline-flex items-center justify-center mr-3 text-[#3D505A] bg-primary-700 font-semibold text-[10.8px] leading-[12px]">
             Powred by
             <a href="#" className="pl-2">
               <svg
@@ -325,12 +315,12 @@ const Hero = () => {
         </form>
       </div>
 
-      <div className="hidden lg:flex absolute bottom-6 right-6 mr-6">
+      <div className="hidden lg:flex absolute top-[796px] left-[1155px] ">
         <button type="submit" className="">
           <a
             href="#gellery"
             style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="inline-flex justify-center items-center text-center text-white hover:border hover:border-gray-300 focus:outline-none font-medium text-md px-10 py-2.5 me-2 mb-2"
+            className="inline-flex justify-center items-center text-center text-white hover:border hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] px-10 py-2.5 me-2 mb-2"
           >
             Galeries Photo
             <svg
@@ -353,19 +343,19 @@ const Hero = () => {
       <div className="lg:flex absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <p
-            className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+            className="mb-8 font-normal text-[22px] leading-[24.2px] text-white sm:px-16 lg:px-48"
             style={{ fontFamily: "Quicksand, sans-serif" }}
           >
             Les Jardins De Zyriab Resort & Spa
           </p>
-          <h1 className="mb-4 text-4xl font-normal tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
+          <h1 className="mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-white">
             Promotion Jusqu’à 30%
           </h1>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
               href="#"
               style={{ fontFamily: "Quicksand, sans-serif" }}
-              className="inline-flex justify-center items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-medium text-sm px-10 py-2.5 me-2 mb-2"
+              className="inline-flex justify-center items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] px-10 py-2.5 me-2 mb-2"
             >
               Réservez
               <svg

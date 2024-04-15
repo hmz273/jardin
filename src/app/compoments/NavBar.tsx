@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import logo from "../../../public/logo.png";
 import BottomNav from "./BottomNav"
-import BookingModel from "./Models/BookingModel";
+import BookingModel from "../Models/BookingModel";
 
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -29,18 +29,18 @@ const NavBar = () => {
 
   return (
     <><nav
-      className="fixed w-full z-20 top-0 start-0 bg-opacity-30"
+      className="fixed w-full h-[150px] z-20 top-0 start-0 bg-opacity-30"
       style={{ fontFamily: "Quicksand, sans-serif" }}
     >
       {isVisible ? (
-        <div className="max-w-screen-4xl flex flex-wrap items-center justify-between mx-auto">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
           <a
             href="#"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
               src={logo}
-              className={`${isDropdownOpen ? "hidden" : ""} h-20 w-24`}
+              className={`${isDropdownOpen ? "hidden" : ""} h-[150px] w-[176px] ml-8`}
               alt="" />
           </a>
           <button
@@ -49,27 +49,27 @@ const NavBar = () => {
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:hidden "
             aria-expanded={isDropdownOpen ? "true" : "false"}
           >
-            <span className="text-white">
+            <span className="text-white font-normal text-lg">
               {isDropdownOpen ? "Ferme" : " Menu"}
             </span>
           </button>
           <div
-            className={`${isDropdownOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
+            className={`${isDropdownOpen ? "block" : "hidden"} w-[42rem] md:block md:w-auto`}
             id="navbar-dropdown"
           >
             <div
-              className={`${isDropdownOpen ? "bg-white md:h-[50rem] md:w-[45rem]" : ""} py-8 `}
+              className={`${isDropdownOpen ? "bg-white md:h-[50rem] md:w-[45rem]" : "p-8"}`}
             >
-              <div className="flex flex-col  mx-auto max-w-screen-sm text-center md:pl-28 mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4 ">
+              <div className="flex flex-col  mx-auto  text-center md:pl-28 mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4 ">
                 <a
                   href="#"
-                  className={`${isDropdownOpen ? "text-gray-700" : "text-gray-50"} text-center`}
+                  className={`${isDropdownOpen ? "text-gray-700" : "text-gray-50"} text-center font-normal text-lg`}
                 >
                   FR
                 </a>
                 <a
                   href="#"
-                  className={`${isDropdownOpen ? "text-gray-700" : "text-gray-50"} text-center`}
+                  className={`${isDropdownOpen ? "text-gray-700" : "text-gray-50"} text-center font-normal text-lg`}
                 >
                   EUR
                 </a>
@@ -78,7 +78,7 @@ const NavBar = () => {
                   data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} hover:border hover:px-4 hover:py-1 text-center`}
+                      : "text-gray-50"} hover:border hover:px-4 hover:py-1 font-semibold md:text-xl text-center px-10`}
                 >
                   Réservez maintenant
                 </a>
@@ -238,7 +238,7 @@ const NavBar = () => {
                   href="#"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-white"
-                      : "text-white"} hover:border hover:px-4 hover:py-1 text-center`}
+                      : "text-white"} hover:border hover:px-4 hover:py-1 text-center mx-16`}
                 >
                   Réservez maintenant
                 </a>

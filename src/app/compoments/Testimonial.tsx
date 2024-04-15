@@ -2,9 +2,9 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section className="h-auto bg-[#F4F1E8]">
+    <section className="bg-[#F4F1E8] md:h-[836.87px]">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <div className="mx-auto max-w-screen-md text-center">
           <svg
             className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
             width="39"
@@ -20,15 +20,14 @@ const Testimonial = () => {
               fill="#13191D"
             />
           </svg>
-          <h2 className="mb-4 md:text-5xl text-3xl tracking-tight font-normal text-gray-700">
+          <h2 className="mb-4 tracking-tight font-normal text-[58px] leading-[63.8px]">
             Commentaire des clients
           </h2>
         </div>
 
-        <div className="p-4 mx-auto my-8 lg:mb-16">
-          <div>
-            {/* <!-- component --> */}
-            <div className="flex flex-col m-auto p-auto md:px-56 text-center">
+        <div className="p-4 mx-auto my-8 md:w-[969px] lg:mb-16">
+        <div className="mb-4">
+            <div className="flex flex-col m-auto p-auto">
               <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
                 <div
                   className="flex flex-nowrap lg:ml-20 md:ml-20 ml-10 m-0"
@@ -36,30 +35,22 @@ const Testimonial = () => {
                   data-tabs-toggle="#default-tab-content"
                   role="tablist"
                 >
-                  <div
-                    className="inline-block px-3 w-60 md:w-72"
-                    role="presentation"
-                  >
-                    <button
-                      style={{ fontFamily: "Quicksand, sans-serif" }}
-                      className="inline-block p-4 hover:text-gray-800 font-semibold text-gray-400 focus:text-gray-700"
-                      id="tri-tab"
+                <div className="inline-block px-3 md:w-[408px]" role="presentation">
+                  <button
+                    className="text-gray-400 focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal text-[28px] leading-[30.8px]"
+                    id="tri-tab"
                       data-tabs-target="#tri"
                       type="button"
                       role="tab"
                       aria-controls="tri"
                       aria-selected="false"
-                    >
-                      COMMENTAIRE DE TRIPADVISOR
-                    </button>
-                  </div>
-                  <div
-                    className="inline-block px-3 w-60 md:w-72"
-                    role="presentation"
                   >
+                    Commentaire De TripAdvisor
+                  </button>
+                </div>
+                  <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      style={{ fontFamily: "Quicksand, sans-serif" }}
-                      className="text-gray-400 focus:text-gray-700 inline-block p-4 hover:text-gray-800 font-semibold"
+                      className="text-gray-400 focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal text-[28px] leading-[30.8px]"
                       id="booking-tab"
                       data-tabs-target="#booking"
                       type="button"
@@ -67,13 +58,12 @@ const Testimonial = () => {
                       aria-controls="booking"
                       aria-selected="false"
                     >
-                      COMMENTAIRE DE BOOKING
+                      Commentaire De Booking
                     </button>
                   </div>
-                  <div className="inline-block px-3 w-72" role="presentation">
+                  <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      style={{ fontFamily: "Quicksand, sans-serif" }}
-                      className="text-gray-400 focus:text-gray-700 p-4 hover:text-gray-800 font-semibold"
+                      className="text-gray-400 focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal text-[28px] leading-[30.8px] "
                       id="cert-tab"
                       data-tabs-target="#cert"
                       type="button"
@@ -81,14 +71,14 @@ const Testimonial = () => {
                       aria-controls="cert"
                       aria-selected="false"
                     >
-                      CERTIFICATS D'EXCELLENCE
+                       Certificats d'excellence
                     </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div id="default-tab-content" className="bg-[#F4F1E8]">
+          <div id="default-tab-content" >
             <div
               className="hidden p-4 rounded-lg w-full bg-[#F4F1E8]"
               id="tri"
@@ -101,7 +91,7 @@ const Testimonial = () => {
                 data-carousel="static"
               >
                 {/* <!-- Carousel wrapper --> */}
-                <div className="relative h-dvh overflow-hidden rounded-lg md:h-[40rem]">
+                <div className="relative  overflow-hidden rounded-lg md:h-[28rem]">
                   {/* <!-- Item 1 --> */}
                   <div
                     className="hidden duration-700 ease-in-out bg-transparent"
@@ -120,167 +110,7 @@ const Testimonial = () => {
                             style={{ fontFamily: "Quicksand, sans-serif" }}
                             className="text-2xl font-normal text-[#3C3A34]"
                           >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 2 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 3 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 4 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 5 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
+                            L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre 
                           </p>
                         </blockquote>
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
@@ -300,7 +130,7 @@ const Testimonial = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-20 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-0 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-prev
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full ">
@@ -322,7 +152,7 @@ const Testimonial = () => {
                 </button>
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-20  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-0  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-next
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10">
@@ -357,7 +187,7 @@ const Testimonial = () => {
                 data-carousel="static"
               >
                 {/* <!-- Carousel wrapper --> */}
-                <div className="relative h-dvh overflow-hidden rounded-lg md:h-[40rem]">
+                <div className="relative  overflow-hidden rounded-lg md:h-[28rem]">
                   {/* <!-- Item 1 --> */}
                   <div
                     className="hidden duration-700 ease-in-out bg-transparent"
@@ -376,167 +206,7 @@ const Testimonial = () => {
                             style={{ fontFamily: "Quicksand, sans-serif" }}
                             className="text-2xl font-normal text-[#3C3A34]"
                           >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 2 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 3 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 4 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 5 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
+                            L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre 
                           </p>
                         </blockquote>
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
@@ -556,7 +226,7 @@ const Testimonial = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-20 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-0 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-prev
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full ">
@@ -578,7 +248,7 @@ const Testimonial = () => {
                 </button>
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-20  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-0  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-next
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10">
@@ -613,7 +283,7 @@ const Testimonial = () => {
                 data-carousel="static"
               >
                 {/* <!-- Carousel wrapper --> */}
-                <div className="relative h-dvh overflow-hidden rounded-lg md:h-[40rem]">
+                <div className="relative  overflow-hidden rounded-lg md:h-[28rem]">
                   {/* <!-- Item 1 --> */}
                   <div
                     className="hidden duration-700 ease-in-out bg-transparent"
@@ -632,167 +302,7 @@ const Testimonial = () => {
                             style={{ fontFamily: "Quicksand, sans-serif" }}
                             className="text-2xl font-normal text-[#3C3A34]"
                           >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 2 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 3 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 4 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
-                          </p>
-                        </blockquote>
-                        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-                          <div className="flex items-center divide-gray-500 dark:divide-gray-700">
-                            <div
-                              style={{ fontFamily: "Quicksand, sans-serif" }}
-                              className="pr-3 text-lg font-normal text-[#AD936D]"
-                            >
-                              En savoir plus
-                            </div>
-                          </div>
-                        </figcaption>
-                      </figure>
-                    </div>
-                  </div>
-                  {/* <!-- Item 5 --> */}
-
-                  <div
-                    className="hidden duration-700 ease-in-out bg-transparent"
-                    data-carousel-item
-                  >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
-                      <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
-                        </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
-                          Tessatess - Tripadvisor
-                        </p>
-                        <blockquote>
-                          <p
-                            style={{ fontFamily: "Quicksand, sans-serif" }}
-                            className="text-2xl font-normal text-[#3C3A34]"
-                          >
-                            Tessatess - Tripadvisor L’emplacement de cet hôtel
-                            est très appréciable ! On n’est pas très loin de la
-                            place et il y a de nombreux restaurants à côté ! En
-                            ce qui concerne la piscine, elle est très propre
-                            peut-être un peu petite, nous avons eu de la chance
+                            L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre 
                           </p>
                         </blockquote>
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
@@ -812,7 +322,7 @@ const Testimonial = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-20 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-0 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-prev
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full ">
@@ -834,7 +344,7 @@ const Testimonial = () => {
                 </button>
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-20  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-0  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-next
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10">

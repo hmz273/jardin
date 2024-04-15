@@ -4,24 +4,24 @@ import captcha from "../../../public/captcha.png";
 
 const Contact = () => {
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
-          <h1 className="max-w-2xl mb-4 text-4xl font-normal tracking-tight leading-none md:text-5xl xl:text-4xl text-[#3D505A]">
+    <section className="bg-white">
+      <div className="grid md:w-[1073px] md:top-[9290.87px] md:left-[184px] max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-auto md:w-[445px] place-self-center lg:col-span-6">
+          <h1 className="max-w-2xl mb-4 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#3D505A]">
             Demander avant de réserver
           </h1>
 
-          <h1 className="py-4 max-w-xl mb-4 text-xl font-normal tracking-tight leading-none md:text-4xl xl:text-2xl text-[#3D505A]">
+          <h1 className="py-4 max-w-xl mb-4 font-normal text-[28px] leading-[30.8px] tracking-tight text-[#3D505A]">
             Les Jardins De Zyriab Resort & Spa
           </h1>
           <p
             style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+            className="max-w-2xl mb-6 text-gray-500 lg:mb-8 font-normal text-[18px] leading-[28.8px] dark:text-gray-400"
           >
             Avenue Echouhada-Quartier De L'hivernage, L’Hivernage, 40000
             Marrakech, Maroc
           </p>
-          <div className="py-4 flex space-x-5 my-2">
+          <div className="py-4 flex space-x-5">
             <a
               href="#"
               className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
@@ -61,12 +61,12 @@ const Contact = () => {
               <span className="text-gray-500 sr-only">FB</span>
             </a>
           </div>
-          <div className="py-4 text-gray-500 my-4">
+          <div className="py-4 text-gray-500">
             <span style={{ fontFamily: "Quicksand, sans-serif" }}>
               Longitude : -8.00317526
             </span>
           </div>
-          <div className="text-gray-500 my-4">
+          <div className="text-gray-500 mb-4">
             <span style={{ fontFamily: "Quicksand, sans-serif" }}>
               {" "}
               Latitude : 31.62674178
@@ -74,25 +74,25 @@ const Contact = () => {
           </div>
           <p
             style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="text-gray-500 my-4"
+            className="text-gray-500 pt-4 font-normal text-[18px] leading-[19.8px]"
           >
             Visualiser notre établissement sur la carte
           </p>
         </div>
-        <div className="lg:mt-0 lg:col-span-5 lg:flex">
+        <div className="lg:mt-0 md:w-[516px] lg:col-span-6 lg:flex">
           <form className="max-w-md mx-auto">
             <div className="relative z-0 w-full mb-5 group">
               <input
                 type="text"
                 name="floating_first_name"
                 id="floating_first_name"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
               <label
                 htmlFor="floating_first_name"
-                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Votre Nom *
               </label>
@@ -102,13 +102,13 @@ const Contact = () => {
                 type="email"
                 name="floating_email"
                 id="floating_email"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
               <label
                 htmlFor="floating_email"
-                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Votre E-mail *
               </label>
@@ -119,13 +119,13 @@ const Contact = () => {
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 name="floating_phone"
                 id="floating_phone"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
               <label
                 htmlFor="floating_phone"
-                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Votre Téléphone *
               </label>
@@ -135,13 +135,13 @@ const Contact = () => {
                 type="text"
                 name="sujet"
                 id="floating_sujet"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
               <label
                 htmlFor="floating_sujet"
-                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Sujet du message *
               </label>
@@ -151,13 +151,13 @@ const Contact = () => {
                 type="text"
                 name="text"
                 id="floating_text"
-                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
               <label
                 htmlFor="floating_text"
-                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 écrivez votre message ici *
               </label>
@@ -166,11 +166,11 @@ const Contact = () => {
               <div className="relative z-0 w-full mb-5 group">
                 <input
                   type="text"
-                  className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
                 />
-                <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                <label className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                   Enter le captcha code
                 </label>
               </div>
@@ -182,7 +182,7 @@ const Contact = () => {
             <button
               style={{ fontFamily: "Quicksand, sans-serif" }}
               type="submit"
-              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-normal text-[18px] leading-[19.8px] px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             >
               Envoyer
             </button>
