@@ -33,7 +33,10 @@ function MonthTable({ year, month }: Props) {
 
 const S = {
   YearMonth: styled.h2`
-    font-size: 16px !important;
+    font-size: 22px !important;
+    line-height: 24.2px;
+    font-weight:600;
+    font-style: Quicksand;
     cursor: default !important;
     color: #fff;
   `,

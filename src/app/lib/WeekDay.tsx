@@ -23,8 +23,12 @@ function WeekDay() {
 const S = {
   Cell: styled.th`
     color: #fff;
-    font-weight: normal !important;
-    font-size: ${theme.fontSize.xs} !important;
+    // padding-top: 2rem;
+    // padding-bottom: 1rem;
+    font-size: 18px !important;
+    line-height: 28.8px;
+    font-weight:700;
+    font-style: Quicksand;
   `,
 
   Row: styled.tr`

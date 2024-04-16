@@ -168,14 +168,12 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="hidden lg:flex absolute top-[572px] left-[21px] bg-white p-6 md:h-[274.5px] md:w-[288px]">
+      <div style={{ fontFamily: "Quicksand, sans-serif" }} className="hidden lg:flex absolute top-[572px] left-[21px] bg-white p-6 md:h-[274.5px] md:w-[288px]">
         <form
-          className="flex flex-col gap-[10px]"
-          style={{ fontFamily: "Quicksand, sans-serif" }}
-        >
-          <h1 className="text-center tracking-tight font-light text-[15.3px] leading-[17px] text-[#3C3A34]">
+          className="flex flex-col gap-[10px]">
+          <p className="text-center capitalize tracking-tight font-light text-[15.3px] leading-[17px] text-[#3C3A34]">
             Votre comparateur simplifié
-          </h1>
+          </p>
 
           <div className="relative">
             <input
@@ -184,11 +182,11 @@ const Hero = () => {
               id="checkInDate"
               value={checkInDate}
               onChange={handleCheckInChange}
-              className="text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px]  block w-full ps-10 p-2.5"
+              className="ic1 text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px]  block w-full ps-10 p-2.5"
             />
 
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-              <p className="text-gray-800">Du</p>
+              <p className="text-gray-800 capitalize">Du</p>
             </div>
           </div>
 
@@ -197,20 +195,21 @@ const Hero = () => {
               type="date"
               min={getMinDate()}
               id="checkOutDate"
-              value={checkOutDate}
+              // value={checkOutDate}
+              placeholder="text"
               onChange={handleCheckOutChange}
-              className="text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px]  block w-full ps-10 p-2.5"
+              className="ic2 text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px] block w-full ps-10 p-2.5"
             />
 
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
-              <p className="text-gray-800">Au</p>
+              <p className="text-gray-800 capitalize">Au</p>
             </div>
           </div>
           <div className="flex">
             <input
               type="data"
-              className="bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px] block flex-1 w-full text-sm p-2.5 "
-              value="1"
+              className="bg-gray-50 pl-10 py-2.5 font-semibold text-[14px] text-[#3C3A34] text-center leading-[16.8px] block flex-1 w-full"
+              value="1 Adulte(S)"
               required
             />
             <span className="inline-flex items-center px-3 bg-gray-50">
@@ -231,9 +230,9 @@ const Hero = () => {
           </div>
 
           <button type="submit" className="">
-            <p className="px-6 py-2 text-white font-semibold text-[16px] leading-[16px] bg-slate-700">compare</p>
+            <p className="px-6 py-3 uppercase text-white font-normal text-[16px] leading-[16px] bg-slate-700">compare</p>
           </button>
-          <p className="inline-flex items-center justify-center mr-3 text-[#3D505A] bg-primary-700 font-semibold text-[10.8px] leading-[12px]">
+          <p className="inline-flex items-center justify-center mr-3 text-[#3D505A] bg-primary-700 font-normal text-[10.8px] leading-[12px]">
             Powred by
             <a href="#" className="pl-2">
               <svg
@@ -320,11 +319,11 @@ const Hero = () => {
           <a
             href="#gellery"
             style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="inline-flex justify-center items-center text-center text-white hover:border hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] px-10 py-2.5 me-2 mb-2"
+            className="inline-flex uppercase justify-center items-center text-center text-[#F4F1E8] hover:border hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] opacity-60 px-10 py-2.5 me-2 mb-2"
           >
             Galeries Photo
             <svg
-              className="ml-2"
+              className="ml-4"
               width="20"
               height="15"
               viewBox="0 0 20 15"
@@ -343,19 +342,19 @@ const Hero = () => {
       <div className="lg:flex absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <p
-            className="mb-8 font-normal text-[22px] leading-[24.2px] text-white sm:px-16 lg:px-48"
+            className="uppercase mb-8 font-normal text-[22px] leading-[24.2px] text-white opacity-75 px-16 lg:px-42"
             style={{ fontFamily: "Quicksand, sans-serif" }}
           >
             Les Jardins De Zyriab Resort & Spa
           </p>
-          <h1 className="mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-white">
+          <h1 className="uppercase mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-white">
             Promotion Jusqu’à 30%
           </h1>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
               href="#"
               style={{ fontFamily: "Quicksand, sans-serif" }}
-              className="inline-flex justify-center items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] px-10 py-2.5 me-2 mb-2"
+              className="inline-flex justify-center items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] px-10 py-2.5 me-2 uppercase mb-2"
             >
               Réservez
               <svg

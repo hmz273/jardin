@@ -19,7 +19,8 @@ function DayRow({ dayList }: Props) {
 
 const S = {
   Row: styled.tr`
-  color: #fff;`,
+  color: #fff;
+  `,
 };
 
 export default memo(DayRow);

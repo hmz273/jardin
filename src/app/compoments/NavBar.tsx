@@ -49,7 +49,7 @@ const NavBar = () => {
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 md:hidden "
             aria-expanded={isDropdownOpen ? "true" : "false"}
           >
-            <span className="text-white font-normal text-lg">
+            <span className="text-white  font-normal text-lg">
               {isDropdownOpen ? "Ferme" : " Menu"}
             </span>
           </button>
@@ -78,7 +78,7 @@ const NavBar = () => {
                   data-modal-target="extralarge-modal" data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} hover:border hover:px-4 hover:py-1 font-semibold md:text-xl text-center px-10`}
+                      : "text-gray-50"} hover:border hover:px-4 hover:py-1 font-semibold md:text-xl text-center uppercase px-10`}
                 >
                   Réservez maintenant
                 </a>
@@ -103,70 +103,70 @@ const NavBar = () => {
               </div>
               {isDropdownOpen && (
                 <ul
-                  className="text-center md:mt-16 text-sm text-gray-700 dark:text-gray-400"
+                  className="text-center md:mt-8 text-gray-700 dark:text-gray-400"
                   aria-labelledby="dropdownLargeButton"
                 >
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Accueil
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Chambres et Suites
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Offres Spécials
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Commentaires
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Nos Services
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         équipements
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Environs de l’établissement
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Galerie
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>
                     <a href="#" className="block px-4 py-4">
-                      <h2 className="md:text-2xl hover:text-red-900 hover:ml-10">
+                      <p className="md:text-2xl capitalize hover:text-red-900 hover:ml-10">
                         Contact
-                      </h2>
+                      </p>
                     </a>
                   </li>
                   <li>

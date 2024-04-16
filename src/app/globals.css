@@ -3,19 +3,6 @@
 @tailwind utilities;
 
 
-
-
-/* In your CSS file (e.g., fonts.css) */
-/* @font-face {
-  font-family: 'Branch';
-  src: url('/../../public/Branch/Branch.woff2') format('woff2'),
-       url('/../../public/Branch/Branch.woff') format('woff');
-  /* Add additional font weights and styles if necessary */
-/* } */
-
-/* Optionally, you can apply the font to specific elements */
-
-
 .hide-scroll-bar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -38,3 +25,13 @@
   display: none;
 }
 
+.ic1 {
+  background:#fff url("../../public/Vector.svg")  97% 50% no-repeat ;
+}
+.ic2 {
+  background:#fff url("../../public/Group.svg")  97% 50% no-repeat ;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}

@@ -8,15 +8,16 @@ const Booking = () => {
   const [checkOutDate, setCheckOutDate] = useState(new Date());
 
   return (
-    <section className="md:p-28 mx-auto my-16  lg:mb-16 text-center bg-[#F4F1E8] md:h-[513px] md:w-[1297px] gap-[80px] top-[8622.87px] left-[72px]">
-      <h3 className="mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-gray-700">
+    <section className="mx-4">
+      <div className="md:p-28 p-6 py-8 md:mx-auto my-16 lg:mb-16 text-center bg-[#F4F1E8] md:h-[513px] h-[550px] md:w-[1297px] gap-[80px] top-[8622.87px] left-[72px]">
+      <h3 className="mb-4 tracking-tight font-normal md:text-[58px] md:leading-[63.8px] text-[42px] leading-[46.2px] text-gray-700">
         Réserver Directement
       </h3>
 
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-4 md:py-8 py-4 md:w-[1079px] md:h-[170px] md:gap[60px]">
+      <div className="grid md:grid-cols-3 mx-auto grid-cols-1 gap-4 md:py-8 py-4 md:w-[1079px] md:h-[170px] md:gap[60px]">
         <div>
           <DatePicker
-            className="custom-date-input block py-2.5 px-0 w-[22rem] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="custom-date-input block py-6 md:py-2.5 px-0 md:w-[22rem] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder="Check-in"
             minDate={new Date()}
             selected={checkInDate}
@@ -27,7 +28,7 @@ const Booking = () => {
 
         <div>
           <DatePicker
-            className="custom-date-input block py-2.5 px-0 w-[22rem] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="custom-date-input block py-6 md:py-2.5 px-0 md:w-[22rem] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholder="Check-out"
             minDate={new Date()}
             selected={checkOutDate}
@@ -37,7 +38,7 @@ const Booking = () => {
         </div>
 
         <div>
-          <select className="block py-2.5 px-0 w-[192px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+          <select className="block py-6 md:py-2.5 px-0 md:w-[192px] w-[278px] ml-4 font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
             <option className="bg-gray-50">Adults</option>
             <option className="bg-gray-50">1</option>
             <option className="bg-gray-50">2</option>
@@ -50,7 +51,7 @@ const Booking = () => {
         <a
           href="#"
           style={{ fontFamily: "Quicksand, sans-serif" }}
-          className="font-semibold text-[20px] leading-[20px] inline-flex justify-center items-center text-center text-[#3D505A] border border-[#13191D] focus:outline-none focus:ring-4 focus:ring-gray-100 px-10 py-2.5 me-2 mb-2 w-80"
+          className="font-semibold md:text-[20px] md:leading-[20px] text-[18px] leading-[19.8px] inline-flex justify-center items-center text-center text-[#3D505A] border border-[#13191D] focus:outline-none focus:ring-4 focus:ring-gray-100 md:px-10 md:py-2.5 py-6 me-2 mb-2 md:w-80 w-[278px]"
         >
           Réservez Maintenant
           <svg
@@ -67,6 +68,7 @@ const Booking = () => {
             />
           </svg>
         </a>
+      </div>
       </div>
     </section>
   );

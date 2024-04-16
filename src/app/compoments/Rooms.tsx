@@ -20,9 +20,9 @@ const Rooms = () => {
             <div className="flex flex-nowrap md:h-[715px] md:gap-[30px]">
               <div className="inline-block px-3 md:w-[856px] w-[18rem]">
                 <div className="h-auto overflow-hidden duration-300 ease-in-out">
-                  <div className="md:w-[856px] w-[18rem]">
+                  <div className="md:w-[856px] md:h-[715px] w-[18rem]">
                     <Image
-                      className="md:h-[488px] md:w-[856px] h-80"
+                      className="md:h-[488px] md:w-[856px] h-auto"
                       src={img}
                       alt=""
                     />

@@ -29,7 +29,7 @@ const Nav = () => {
   return (
     <>
     <div className={`${
-            isVisible ? "md:grid md:grid-cols-2 md:h-[150px] md:pl-[70px] fixed w-full z-20 top-0 start-0 bg-opacity-30" : "md:grid md:grid-cols-2 md:h-[150px] md:pl-[70px] fixed w-full z-20 top-0 start-0 bg-opacity-30 "
+            isVisible ? "md:grid md:grid-cols-2 md:h-[150px] md:pl-[70px] fixed w-full z-20 top-0 start-0 bg-opacity-30" : "md:grid md:grid-cols-2 md:h-[6rem] md:pl-[70px] fixed w-full z-20 top-0 start-0 bg-opacity-30 bg-white"
           }`}>
         <div>
           {isVisible ? (<Link
@@ -48,11 +48,7 @@ const Nav = () => {
               style={{ fontFamily: "Quicksand, sans-serif" }}
               data-modal-target="extralarge-modal"
               data-modal-toggle="extralarge-modal"
-              className={`${
-                isDropdownOpen
-                  ? "hover:bg-orange-800 hover:text-gray-50"
-                  : "text-gray-50"
-              } hover:border hover:px-4 hover:py-1 font-semibold md:text-2xl text-center px-10`}
+              className={`$${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} hover:border hover:px-4 hover:py-1 font-semibold md:text-2xl text-center px-10`}
             >
               Réservez maintenant
             </a></div>) }
@@ -63,18 +59,18 @@ const Nav = () => {
             isDropdownOpen ? "bg-white md:h-[50rem] md:w-[46rem]" : ""
           } p-4`}
         >
-          <div className="md:flex hidden mx-auto text-center md:pl-14 mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
+          <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
             {isVisible ? (
               <><a
                 href="#"
                 style={{ fontFamily: "Quicksand, sans-serif" }}
-                className={`${isDropdownOpen ? "text-gray-[#13191D]" : "text-gray-50"} text-center font-normal text-lg`}
+                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-normal text-[18px] leading-[28.8px]`}
               >
                 FR
               </a><a
                 href="#"
                 style={{ fontFamily: "Quicksand, sans-serif" }}
-                className={`${isDropdownOpen ? "text-gray-[#13191D]" : "text-gray-50"} text-center font-normal text-lg`}
+                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-normal text-[18px] leading-[28.8px]`}
               >
                   EUR
                 </a><a
@@ -92,7 +88,7 @@ const Nav = () => {
                   className={`${isDropdownOpen ? "text-gray-900" : "text-gray-50"} md:flex items-center justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
                   onClick={toggleDropdown}
                 >
-                  {isDropdownOpen ? "Fermer" : "Menu"}
+                  <span className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-75"}`}>{isDropdownOpen ? "Fermer" : "Menu"}</span>
                   {isDropdownOpen ? (
                     <svg
                       className="ml-2"
@@ -125,13 +121,11 @@ const Nav = () => {
               
             <button
             style={{ fontFamily: "Quicksand, sans-serif" }}
-            className={`${
-              isDropdownOpen ? "text-gray-900" : "text-gray-50"
-            } md:flex items-center justify-self-end justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
+            className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : '') : ''} md:flex items-center justify-self-end  justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
             onClick={toggleDropdown}
           >
             {isDropdownOpen ? "Fermer" : "Menu"}
-            {isDropdownOpen ? (
+            {isDropdownOpen  ? (
               <svg
                 className="ml-2"
                 width="10"
@@ -156,7 +150,7 @@ const Nav = () => {
               >
                 <path
                   d="M7 12.99L2 2.00999L12 2.00999L7 12.99Z"
-                  fill="white"
+                  fill="#13191D"
                 />
               </svg>
             )}
@@ -167,7 +161,7 @@ const Nav = () => {
 
           {isDropdownOpen && (
             <ul
-              className="text-center md:mt-16 text-sm text-gray-700 dark:text-gray-400"
+              className="text-center md:mt-10 text-sm text-gray-700 dark:text-gray-400"
               aria-labelledby="dropdownLargeButton"
             >
               <li>

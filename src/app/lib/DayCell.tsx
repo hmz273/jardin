@@ -76,8 +76,10 @@ const S = {
     isFirstPickedDate: boolean;
     isSecondPickedDate: boolean;
   }>`
-    width: 48px !important;
-    height: 48px !important;
+    width: 52px !important;
+    height: 52px !important;
+    // background-color:red;
+    
     ${({ isBetweenPickedDates }) =>
       isBetweenPickedDates &&
       `
@@ -99,10 +101,14 @@ const S = {
   Cell: styled.div<{ isSelected: boolean; disabled: boolean }>`
     ${mixin.flexbox({ ai: 'center', jc: 'center' })};
     height: 100%;
+    // margin:5px 2px 5px 2px;
     border: 1px solid transparent;
     cursor: pointer;
     transition: all 100ms;
-    font-size: ${theme.fontSize.xs} !important;
+    font-size: 18px !important;
+    line-height: 28.8px;
+    font-weight:400;
+    font-style: Quicksand;
 
     &:hover {
       border-color: ${theme.color.gray1};
