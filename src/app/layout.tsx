@@ -22,6 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
       </head>
       <body className={myFont.className}>{children}
       <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
@@ -29,6 +31,7 @@ export default function RootLayout({
       <script src="../path/to/flowbite/dist/datepicker.js"></script>
       <script src="../path/to/flatpickr.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
+      
       </body>
     </html>
   );

@@ -15,8 +15,8 @@ const Contact = () => {
             Les Jardins De Zyriab Resort & Spa
           </h1>
           <p
-            style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="max-w-2xl mb-6 text-gray-500 lg:mb-8 font-normal text-[18px] leading-[28.8px] dark:text-gray-400"
+            
+            className="max-w-2xl mb-6 text-gray-500 lg:mb-8 font-quicksand font-normal text-[18px] leading-[28.8px] dark:text-gray-400"
           >
             Avenue Echouhada-Quartier De L'hivernage, L’Hivernage, 40000
             Marrakech, Maroc
@@ -61,20 +61,20 @@ const Contact = () => {
               <span className="text-gray-500 sr-only">FB</span>
             </a>
           </div>
-          <div className="py-4 text-gray-500">
-            <span style={{ fontFamily: "Quicksand, sans-serif" }}>
+          <div className="py-4 text-gray-500 font-quicksand">
+            <span>
               Longitude : -8.00317526
             </span>
           </div>
-          <div className="text-gray-500 mb-4">
-            <span style={{ fontFamily: "Quicksand, sans-serif" }}>
+          <div className="text-gray-500 font-quicksand mb-4">
+            <span>
               {" "}
               Latitude : 31.62674178
             </span>
           </div>
           <p
-            style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="text-gray-500 pt-4 font-normal text-[18px] leading-[19.8px]"
+            
+            className="text-gray-500 pt-4 font-normal font-quicksand text-[18px] leading-[19.8px]"
           >
             Visualiser notre établissement sur la carte
           </p>
@@ -180,9 +180,9 @@ const Contact = () => {
             </div>
 
             <button
-              style={{ fontFamily: "Quicksand, sans-serif" }}
+              
               type="submit"
-              className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-normal text-[18px] leading-[19.8px] px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              className="text-gray-900 bg-white border font-quicksand border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-normal text-[18px] leading-[19.8px] px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             >
               Envoyer
             </button>

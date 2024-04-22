@@ -3,36 +3,35 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      className="pb-32 md:pb-0"
-      style={{ fontFamily: "Quicksand, sans-serif" }}
+      className="pb-32 md:p-[50px] font-quicksand"
     >
       <div className="mx-auto w-full px-5">
-        <div className="grid grid-cols-1 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 pb-0 pt-[38px] pl-0 md:grid-cols-4">
           <div>
             <ul>
-              <li className="mb-4 pb-6">
-                <p className="font-normal text-[18px] leading-[28.8px] text-[#3C3A34] hover:underline">
+              <li className="mb-[5px] pb-6">
+                <p className="font-normal tracking-normal text-[18px] leading-[28.8px] text-[#3C3A34] hover:underline">
                 Km 13 Route De L’Ourika – Canal De Zaraba, 40000 Aït Hamid, Maroc
                 </p>
               </li>
               <li>
-                <p className="hover:underline font-normal text-[18px] leading-[19.8px] text-[#13191D]">
+                <p className="hover:underline font-normal tracking-normal text-[18px] leading-[19.8px] text-[#13191D]">
                   Visualiser notre établissement sur la carte
                 </p>
               </li>
             </ul>
           </div>
-          <div>
-            <ul>
+          <div className="pl-[80px]">
+            <ul className="pl-[34px] w-[16rem]">
               <li className="mb-4">
-                <p className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">Politique de confidentialité</p>
+                <p className="hover:underline font-normal tracking-normal text-[18px] leading-[28.8px] text-[#13191D]">Politique de confidentialité</p>
               </li>
               <li className="mb-4">
-                <p className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">Plan de site</p>
+                <p className="hover:underline font-normal tracking-normal text-[18px] leading-[28.8px] text-[#13191D]">Plan de site</p>
               </li>
             </ul>
           </div>
-          <div>
+          <div className="pl-[111px]">
             <ul>
               <li className="mb-4">
                 <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
@@ -66,8 +65,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <ul className="text-gray-500 grid grid-cols-2 md:grid-cols-1 font-medium">
+          <div className="pl-[113px]">
+            <ul className="text-gray-500 grid grid-cols-1 md:grid-cols-1 font-medium">
               <li className="mb-4 space-x-2 flex">
                 <svg
                   width="22"
@@ -114,74 +113,11 @@ const Footer = () => {
           , Hôtel 4 étoiles Provence , Hôtel de charme Var , Lieu mariage Var ,
           Séminaire PACA ,
         </p>
+        <hr className="h-[2px] w-[90rem] md:-ml-[70px] mt-8 -mb-[30px] bg-gray-100 border-0" />
 
-        <div className="px-4 py-6 md:flex md:items-center md:justify-between border-t-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-            <a
-              href="#"
-              className="text-[#3C3A34] py-4 inline-flex items-center justify-center  mr-3 font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-            >
-              Technology Providers
-              <svg
-                className="ml-4"
-                width="16"
-                height="15"
-                viewBox="0 0 16 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_89_1699)">
-                  <path
-                    d="M5.64259 2.84473V4.00697H10.5033L3.57007 11.3584L4.41452 12.1552L11.2677 4.88859V10.0066H12.4299V2.84473H5.64259Z"
-                    fill="#13191D"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_89_1699">
-                    <rect
-                      width="15"
-                      height="15"
-                      fill="white"
-                      transform="translate(0.5)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-
-            <a
-              href="#"
-              className="text-[#3C3A34]  inline-flex items-center justify-center  mr-3 font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-            >
-              Politique de confidentialité
-              <svg
-                className="ml-4"
-                width="16"
-                height="15"
-                viewBox="0 0 16 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_89_1699)">
-                  <path
-                    d="M5.64259 2.84473V4.00697H10.5033L3.57007 11.3584L4.41452 12.1552L11.2677 4.88859V10.0066H12.4299V2.84473H5.64259Z"
-                    fill="#13191D"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_89_1699">
-                    <rect
-                      width="15"
-                      height="15"
-                      fill="white"
-                      transform="translate(0.5)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </a>
-          </div>
-          <p className="mt-4 ml-8 inline-flex items-center justify-center  mr-3 font-normal text-[18px] leading-[28.8px] text-[#3C3A34] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+        <div className="px-0 pb-6 pt-[30px] md:flex md:items-center md:justify-between ">
+          
+          <p className="mt-2 inline-flex items-center justify-center  mr-3 font-normal tracking-widest text-[18px] leading-[28.8px] text-[#3C3A34] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
             © 2024 - Powred By{" "}
             <a href="#" className="pl-2">
               <svg
@@ -258,6 +194,72 @@ const Footer = () => {
               </svg>
             </a>
           </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+            <a
+              href="#"
+              className="text-[#3C3A34] pb-4 md:pt-[28px] inline-flex items-center  font-normal tracking-wider text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            >
+              Technology Providers
+              <svg
+                className="ml-4"
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_89_1699)">
+                  <path
+                    d="M5.64259 2.84473V4.00697H10.5033L3.57007 11.3584L4.41452 12.1552L11.2677 4.88859V10.0066H12.4299V2.84473H5.64259Z"
+                    fill="#13191D"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_89_1699">
+                    <rect
+                      width="15"
+                      height="15"
+                      fill="white"
+                      transform="translate(0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              className="text-[#3C3A34]  inline-flex items-center tracking-normal  font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+            >
+              Politique de confidentialité
+              <svg
+                className="ml-4"
+                width="16"
+                height="15"
+                viewBox="0 0 16 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_89_1699)">
+                  <path
+                    d="M5.64259 2.84473V4.00697H10.5033L3.57007 11.3584L4.41452 12.1552L11.2677 4.88859V10.0066H12.4299V2.84473H5.64259Z"
+                    fill="#13191D"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_89_1699">
+                    <rect
+                      width="15"
+                      height="15"
+                      fill="white"
+                      transform="translate(0.5)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

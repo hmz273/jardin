@@ -21,6 +21,15 @@ export default function Home() {
     {/* <NavBar/> */}
     <Nav />
     <Hero/>
+    {/* <button
+    className="bg-red-500 py-8 px-4 text-white"
+  type="button"
+  // onClick={() => {
+  //   throw new Error("Sentry Frontend Error");
+  // }}
+>
+  Throw error
+</button> */}
     <About/>
     <Rooms/>
     <Offers/>

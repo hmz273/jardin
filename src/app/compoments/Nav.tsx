@@ -4,7 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/logo.png";
 import BookingModel from "../Models/BookingModel";
-
+// import { Quicksand } from 'next/font/google'
+ 
+//  const quicksand = Quicksand({
+//   subsets: ['latin'],
+//   variable: '--font-quick',
+// })
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -38,17 +43,17 @@ const Nav = () => {
           >
             <Image
               src={logo}
-              className="md:h-[150px] h-[57px] w-[87px] md:w-[176px] md:ml-8 ml-4"
+              className="md:h-[150px] h-[57px] w-[87px] md:w-[176px]"
               alt=""
             />
           </Link>) : (
-            <div className=" mt-8">
+            <div className="mt-8">
             <a
               href="#"
-              style={{ fontFamily: "Quicksand, sans-serif" }}
+              
               data-modal-target="extralarge-modal"
               data-modal-toggle="extralarge-modal"
-              className={`$${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} hover:border hover:px-4 hover:py-1 font-semibold md:text-2xl text-center px-10`}
+              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand hover:border hover:px-4 hover:py-1 font-semibold md:text-2xl text-center px-10`}
             >
               Réservez maintenant
             </a></div>) }
@@ -57,38 +62,38 @@ const Nav = () => {
         <div
           className={`${
             isDropdownOpen ? "bg-white md:h-[50rem] md:w-[46rem]" : ""
-          } p-4`}
+          } py-4 pr-7 mt-6`}
         >
           <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
             {isVisible ? (
               <><a
                 href="#"
-                style={{ fontFamily: "Quicksand, sans-serif" }}
-                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-normal text-[18px] leading-[28.8px]`}
+                
+                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
               >
                 FR
               </a><a
                 href="#"
-                style={{ fontFamily: "Quicksand, sans-serif" }}
-                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-normal text-[18px] leading-[28.8px]`}
+                
+                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
               >
                   EUR
                 </a><a
                   href="#"
-                  style={{ fontFamily: "Quicksand, sans-serif" }}
+                  
                   data-modal-target="extralarge-modal"
                   data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} hover:border hover:px-4 hover:py-1 font-semibold md:text-2xl text-center px-10`}
+                      : "text-gray-50"} hover:border font-quicksand hover:px-4 hover:py-1 font-semibold md:text-[22px] md:leading-[20px] text-center py-2 px-10`}
                 >
                   Réservez maintenant
                 </a><button
-                  style={{ fontFamily: "Quicksand, sans-serif" }}
-                  className={`${isDropdownOpen ? "text-gray-900" : "text-gray-50"} md:flex items-center justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
+                  
+                  className={`${isDropdownOpen ? "text-gray-900" : "text-gray-50"} font-quicksand md:flex items-center justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
                   onClick={toggleDropdown}
                 >
-                  <span className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-75"}`}>{isDropdownOpen ? "Fermer" : "Menu"}</span>
+                  <span className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-75"} font-quicksand`}>{isDropdownOpen ? "Fermer" : "Menu"}</span>
                   {isDropdownOpen ? (
                     <svg
                       className="ml-2"
@@ -120,8 +125,8 @@ const Nav = () => {
             ) : (
               
             <button
-            style={{ fontFamily: "Quicksand, sans-serif" }}
-            className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : '') : ''} md:flex items-center justify-self-end  justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
+            
+            className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : '') : ''} md:flex font-quicksand items-center justify-self-end  justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
             onClick={toggleDropdown}
           >
             {isDropdownOpen ? "Fermer" : "Menu"}

@@ -4,8 +4,18 @@ import Image from "next/image";
 import img from "../../../public/about.png";
 
 const Hero = () => {
-  const [checkInDate, setCheckInDate] = useState("");
-  const [checkOutDate, setCheckOutDate] = useState("");
+  const getTomorrowDate = () => {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow.toISOString().split('T')[0];
+}
+const getCurrentDate = () => {
+  return new Date().toISOString().split('T')[0];
+}
+
+  const [checkInDate, setCheckInDate] = useState(getCurrentDate());
+  const [checkOutDate, setCheckOutDate] = useState(getTomorrowDate());
 
   const handleCheckInChange = (e) => {
     setCheckInDate(e.target.value);
@@ -70,7 +80,7 @@ const Hero = () => {
         {/* <!-- Slider controls --> */}
         <button
           type="button"
-          className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          className="absolute top-[-3.2rem] w-[12rem] start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-prev
         >
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full">
@@ -124,7 +134,7 @@ const Hero = () => {
         </button>
         <button
           type="button"
-          className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          className="absolute top-[-3.2rem] w-[12rem] end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
           data-carousel-next
         >
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -168,10 +178,10 @@ const Hero = () => {
         </button>
       </div>
 
-      <div style={{ fontFamily: "Quicksand, sans-serif" }} className="hidden lg:flex absolute top-[572px] left-[21px] bg-white p-6 md:h-[274.5px] md:w-[288px]">
+      <div  className="hidden font-quicksand lg:flex absolute top-[572px] left-[21px] bg-white p-[16px] md:h-[274.5px] md:w-[288px]">
         <form
-          className="flex flex-col gap-[10px]">
-          <p className="text-center capitalize tracking-tight font-light text-[15.3px] leading-[17px] text-[#3C3A34]">
+          className="flex flex-col gap-[10px] w-[16rem]">
+          <p className="text-center capitalize tracking-wide font-normal text-[16px] leading-[17px] text-[#3C3A34]">
             Votre comparateur simplifié
           </p>
 
@@ -182,7 +192,7 @@ const Hero = () => {
               id="checkInDate"
               value={checkInDate}
               onChange={handleCheckInChange}
-              className="ic1 text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px]  block w-full ps-10 p-2.5"
+              className="ic1 text-center px-4 py-2 border-0 bg-gray-50 font-bold text-[14px] text-[#3C3A34] leading-[17.5px]  block w-full ps-10 p-2.5"
             />
 
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -195,8 +205,7 @@ const Hero = () => {
               type="date"
               min={getMinDate()}
               id="checkOutDate"
-              // value={checkOutDate}
-              placeholder="text"
+              value={checkOutDate}
               onChange={handleCheckOutChange}
               className="ic2 text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px] block w-full ps-10 p-2.5"
             />
@@ -318,12 +327,12 @@ const Hero = () => {
         <button type="submit" className="">
           <a
             href="#gellery"
-            style={{ fontFamily: "Quicksand, sans-serif" }}
-            className="inline-flex uppercase justify-center items-center text-center text-[#F4F1E8] hover:border hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] opacity-60 px-10 py-2.5 me-2 mb-2"
+            
+            className="inline-flex uppercase justify-center font-quicksand tracking-tighter items-center text-center text-[#F4F1E8] hover:border hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] opacity-60 px-10 pl-4 pt-4 py-2.5 me-2 mb-2"
           >
             Galeries Photo
             <svg
-              className="ml-4"
+              className="ml-2"
               width="20"
               height="15"
               viewBox="0 0 20 15"
@@ -339,22 +348,22 @@ const Hero = () => {
         </button>
       </div>
 
-      <div className="lg:flex absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
-        <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <div className="lg:flex absolute -translate-x-1/2 -translate-y-1/2 top-[25.7rem] left-1/2">
+        <div className="mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <p
-            className="uppercase mb-8 font-normal text-[22px] leading-[24.2px] text-white opacity-75 px-16 lg:px-42"
-            style={{ fontFamily: "Quicksand, sans-serif" }}
+            className="uppercase font-normal tracking-tighter font-quicksand text-[22px] leading-[24.2px] text-white opacity-75 px-16 py-[22px]"
+            
           >
             Les Jardins De Zyriab Resort & Spa
           </p>
-          <h1 className="uppercase mb-4 tracking-tight font-normal text-[58px] leading-[63.8px] text-white">
+          <h1 className="uppercase mb-[24px] tracking-normal font-normal text-[58px] leading-[63.8px] text-white">
             Promotion Jusqu’à 30%
           </h1>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
               href="#"
-              style={{ fontFamily: "Quicksand, sans-serif" }}
-              className="inline-flex justify-center items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] px-10 py-2.5 me-2 uppercase mb-2"
+              
+              className="inline-flex justify-center font-quicksand items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] px-10 py-3 uppercase mb-2"
             >
               Réservez
               <svg

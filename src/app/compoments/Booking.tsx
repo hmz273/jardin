@@ -4,21 +4,31 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const Booking = () => {
-  const [checkInDate, setCheckInDate] = useState(new Date());
-  const [checkOutDate, setCheckOutDate] = useState(new Date());
+  const getTomorrowDate = () => {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    return tomorrow.toISOString().split('T')[0];
+}
+const getCurrentDate = () => {
+  return new Date().toISOString().split('T')[0];
+}
+  const [checkInDate, setCheckInDate] = useState(getCurrentDate());
+  const [checkOutDate, setCheckOutDate] = useState(getTomorrowDate());
 
   return (
-    <section className="mx-4">
+  <section className="mx-4 mt-[13rem]">
       <div className="md:p-28 p-6 py-8 md:mx-auto my-16 lg:mb-16 text-center bg-[#F4F1E8] md:h-[513px] h-[550px] md:w-[1297px] gap-[80px] top-[8622.87px] left-[72px]">
-      <h3 className="mb-4 tracking-tight font-normal md:text-[58px] md:leading-[63.8px] text-[42px] leading-[46.2px] text-gray-700">
+      <h3 className="mb-[28px] mt-[4rem] tracking-normal font-normal md:text-[58px] md:leading-[63.8px] text-[42px] leading-[46.2px] text-gray-700">
         Réserver Directement
       </h3>
 
-      <div className="grid md:grid-cols-3 mx-auto grid-cols-1 gap-4 md:py-8 py-4 md:w-[1079px] md:h-[170px] md:gap[60px]">
+      <div className="grid md:grid-cols-3 mx-auto grid-cols-1  -mb-[28px] md:py-8 py-4 md:w-[1079px] md:h-[170px] md:gap-[15rem]">
         <div>
           <DatePicker
-            className="custom-date-input block py-6 md:py-2.5 px-0 md:w-[22rem] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder="Check-in"
+            className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[26px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            // placeholder="Check-in"
+            // value="Check-in"
             minDate={new Date()}
             selected={checkInDate}
             onChange={(checkInDate) => setCheckInDate(checkInDate)}
@@ -28,8 +38,9 @@ const Booking = () => {
 
         <div>
           <DatePicker
-            className="custom-date-input block py-6 md:py-2.5 px-0 md:w-[22rem] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder="Check-out"
+            className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[30px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            // placeholder="Check-out"
+            // value="Check-out"
             minDate={new Date()}
             selected={checkOutDate}
             onChange={(checkOutDate) => setCheckOutDate(checkOutDate)}
@@ -38,8 +49,8 @@ const Booking = () => {
         </div>
 
         <div>
-          <select className="block py-6 md:py-2.5 px-0 md:w-[192px] w-[278px] ml-4 font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
-            <option className="bg-gray-50">Adults</option>
+          <select className="block py-6 tracking-widest md:py-2.5 pr-0 md:w-[192px] w-[278px] pl-[20px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+            <option className="bg-gray-50">Adultes</option>
             <option className="bg-gray-50">1</option>
             <option className="bg-gray-50">2</option>
             <option className="bg-gray-50">3</option>
@@ -47,11 +58,10 @@ const Booking = () => {
           </select>
         </div>
       </div>
-      <div className="relative mt-6">
+      <div className="relative mt-[14px]">
         <a
           href="#"
-          style={{ fontFamily: "Quicksand, sans-serif" }}
-          className="font-semibold md:text-[20px] md:leading-[20px] text-[18px] leading-[19.8px] inline-flex justify-center items-center text-center text-[#3D505A] border border-[#13191D] focus:outline-none focus:ring-4 focus:ring-gray-100 md:px-10 md:py-2.5 py-6 me-2 mb-2 md:w-80 w-[278px]"
+          className="font-semibold tracking-normal uppercase font-quicksand md:text-[20px] md:leading-[20px] text-[18px] leading-[19.8px] inline-flex justify-center items-center text-center text-[#3D505A] border border-[#13191D] focus:outline-none focus:ring-4 focus:ring-gray-100 md:px-10 py-5 me-2 mb-2 w-[22rem]"
         >
           Réservez Maintenant
           <svg
