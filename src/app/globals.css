@@ -12,14 +12,23 @@
 }
 
 
-.hide-scroll-bar-eq::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-  background: gray;
+.hide-scroll-bar-eq::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
 }
 
+.hide-scroll-bar-eq::-webkit-scrollbar
+{
+	width: 12px;
+}
+
+.hide-scroll-bar-eq::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(100 116 139);
+}
 
 .custom-date-input::-webkit-calendar-picker-indicator {
   display: none;

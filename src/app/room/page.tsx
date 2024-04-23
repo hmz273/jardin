@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../compoments/NavBar";
+import Nav from "../compoments/Nav";
 import Hero from "../compoments/room/Hero";
 import Details from "../compoments/room/Details";
 import Gallery from "../compoments/room/Gallery";
@@ -11,7 +11,7 @@ import BottomNav from "../compoments/BottomNav";
 const room = () => {
   return (
     <div>
-      <NavBar />
+      <Nav />
       <Hero />
       <Details />
       <Gallery />

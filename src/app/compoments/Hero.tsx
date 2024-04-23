@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import img from "../../../public/about.png";
+import DateRange from "./DateRange";
 
 const Hero = () => {
   const getTomorrowDate = () => {
@@ -178,9 +179,8 @@ const getCurrentDate = () => {
         </button>
       </div>
 
-      <div  className="hidden font-quicksand lg:flex absolute top-[572px] left-[21px] bg-white p-[16px] md:h-[274.5px] md:w-[288px]">
-        <form
-          className="flex flex-col gap-[10px] w-[16rem]">
+      <div className="hidden font-quicksand lg:flex absolute top-[572px] left-[21px] bg-white p-[16px] md:h-[274.5px] md:w-[288px]">
+        <form className="flex flex-col gap-[10px] w-[16rem]">
           <p className="text-center capitalize tracking-wide font-normal text-[16px] leading-[17px] text-[#3C3A34]">
             Votre comparateur simplifié
           </p>

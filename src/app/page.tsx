@@ -15,21 +15,13 @@ import Footer from "./compoments/Footer";
 import BottomNav from "./compoments/BottomNav";
 import Nav from "./compoments/Nav";
 
+
 export default function Home() {
   return (
     <>
     {/* <NavBar/> */}
     <Nav />
     <Hero/>
-    {/* <button
-    className="bg-red-500 py-8 px-4 text-white"
-  type="button"
-  // onClick={() => {
-  //   throw new Error("Sentry Frontend Error");
-  // }}
->
-  Throw error
-</button> */}
     <About/>
     <Rooms/>
     <Offers/>
