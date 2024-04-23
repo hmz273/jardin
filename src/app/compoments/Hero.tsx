@@ -207,7 +207,7 @@ const getCurrentDate = () => {
               id="checkOutDate"
               value={checkOutDate}
               onChange={handleCheckOutChange}
-              className="ic2 text-center px-4 py-2 border-0 bg-gray-50 font-semibold text-[14px] text-[#3C3A34] leading-[16.8px] block w-full ps-10 p-2.5"
+              className="ic2 text-center px-4 py-2 border-0 bg-gray-50 font-bold text-[14px] text-[#3C3A34] leading-[16.8px] block w-full ps-10 p-2.5"
             />
 
             <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -217,7 +217,7 @@ const getCurrentDate = () => {
           <div className="flex">
             <input
               type="data"
-              className="bg-gray-50 pl-10 py-2.5 font-semibold text-[14px] text-[#3C3A34] text-center leading-[16.8px] block flex-1 w-full"
+              className="bg-gray-50 pl-10 py-2.5 font-bold text-[14px] text-[#3C3A34] text-center leading-[16.8px] block flex-1 w-full"
               value="1 Adulte(S)"
               required
             />

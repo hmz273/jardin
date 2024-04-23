@@ -27,10 +27,16 @@ const Services = () => {
                       </h5>
                       <p
 
-                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                        className="font-normal font-quicksand text-[18px] leading-[28.8px] pt-5"
                       >
                         Pour toute réservation via notre Site Web uniquement
                         dépassant 5 nuitées
+                      </p>
+                      <p
+
+                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                      >
+                        Offert
                       </p>
 
                       <button
@@ -55,14 +61,20 @@ const Services = () => {
                       </h5>
                       <p
 
-                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                        className="font-normal font-quicksand text-[18px] leading-[28.8px] pt-5"
                       >
                         Pour toute réservation via notre Site Web uniquement
                         dépassant 5 nuitées
                       </p>
+                      <p
+
+                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                      >
+                        À partir de 272.46 MAD / 1 personne
+                      </p>
 
                       <button
-
+                      data-modal-target="service" data-modal-toggle="service"
                         type="button"
                         className="py-1 pr-5 me-2 font-normal uppercase tracking-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >
@@ -83,14 +95,20 @@ const Services = () => {
                       </h5>
                       <p
 
-                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                        className="font-normal font-quicksand text-[18px] leading-[28.8px] pt-5"
                       >
                         Pour toute réservation via notre Site Web uniquement
                         dépassant 5 nuitées
                       </p>
+                      <p
+
+                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                      >
+                        À partir de 272.46 MAD / 1 personne
+                      </p>
 
                       <button
-
+                      data-modal-target="service" data-modal-toggle="service"
                         type="button"
                         className="py-1 pr-5 me-2 font-normal uppercase tracking-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >
@@ -111,14 +129,20 @@ const Services = () => {
                       </h5>
                       <p
 
-                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                        className="font-normal font-quicksand text-[18px] leading-[28.8px] pt-5"
                       >
                         Pour toute réservation via notre Site Web uniquement
                         dépassant 5 nuitées
                       </p>
+                      <p
+
+                        className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5"
+                      >
+                        À partir de 272.46 MAD / 1 personne
+                      </p>
 
                       <button
-
+                      data-modal-target="service" data-modal-toggle="service"
                         type="button"
                         className="py-1 pr-5 me-2 font-normal uppercase tracking-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >

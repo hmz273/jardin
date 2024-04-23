@@ -17,13 +17,15 @@ const Etablisement = () => {
               <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
                 <div
                   className="flex flex-nowrap lg:ml-20 md:ml-20 ml-10 m-0"
+                  data-tabs-active-classes="text-[#13191D] hover:text-[#13191D]"
+                  data-tabs-inactive-classes="text-gray-500 hover:text-gray-600"
                   id="default-tab"
                   data-tabs-toggle="#default-tab-content"
                   role="tablist"
                 >
                 <div className="inline-block pr-3 md:pl-[24px]" role="presentation">
                     <button
-                      className="text-gray-400 capitalize focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal text-[28px] leading-[30.8px]"
+                      className="text-gray-400 capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
                       id="cafe-tab"
                       data-tabs-target="#cafe"
                       type="button"
@@ -36,7 +38,7 @@ const Etablisement = () => {
                   </div>
                   <div className="inline-block pr-3 md:pl-[24px]" role="presentation">
                     <button
-                      className="text-gray-400 capitalize focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal text-[28px] leading-[30.8px]"
+                      className="text-gray-400 capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
                       id="cafe-tab"
                       data-tabs-target="#cafe"
                       type="button"
@@ -49,7 +51,7 @@ const Etablisement = () => {
                   </div>
                   <div className="inline-block pr-3 md:pl-[24px]" role="presentation">
                     <button
-                      className="text-gray-400 capitalize focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal text-[28px] leading-[30.8px]"
+                      className="text-gray-400 capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
                       id="cafe-tab"
                       data-tabs-target="#cafe"
                       type="button"
@@ -116,7 +118,7 @@ const Etablisement = () => {
             </div>
 
             <div
-              className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+              className="hidden p-4 rounded-lg"
               id="cafe"
               role="tabpanel"
               aria-labelledby="cafe-tab"
@@ -166,7 +168,7 @@ const Etablisement = () => {
             </div>
 
             <div
-              className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+              className="hidden p-4 rounded-lg"
               id="restocafe"
               role="tabpanel"
               aria-labelledby="restocafe-tab"

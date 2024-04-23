@@ -4,17 +4,9 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const Booking = () => {
-  const getTomorrowDate = () => {
-    const today = new Date();
-    const tomorrow = new Date(today);
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    return tomorrow.toISOString().split('T')[0];
-}
-const getCurrentDate = () => {
-  return new Date().toISOString().split('T')[0];
-}
-  const [checkInDate, setCheckInDate] = useState(getCurrentDate());
-  const [checkOutDate, setCheckOutDate] = useState(getTomorrowDate());
+
+  const [checkInDate, setCheckInDate] = useState(null);
+  const [checkOutDate, setCheckOutDate] = useState(null);
 
   return (
   <section className="mx-4 mt-[13rem]">
@@ -27,8 +19,7 @@ const getCurrentDate = () => {
         <div>
           <DatePicker
             className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[26px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            // placeholder="Check-in"
-            // value="Check-in"
+            placeholderText="Check-in"
             minDate={new Date()}
             selected={checkInDate}
             onChange={(checkInDate) => setCheckInDate(checkInDate)}
@@ -39,8 +30,7 @@ const getCurrentDate = () => {
         <div>
           <DatePicker
             className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[30px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            // placeholder="Check-out"
-            // value="Check-out"
+            placeholderText="Check-out"
             minDate={new Date()}
             selected={checkOutDate}
             onChange={(checkOutDate) => setCheckOutDate(checkOutDate)}
@@ -48,8 +38,8 @@ const getCurrentDate = () => {
           />
         </div>
 
-        <div>
-          <select className="block py-6 tracking-widest md:py-2.5 pr-0 md:w-[192px] w-[278px] pl-[20px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+        <div className="select">
+          <select className="block img-bg py-6 tracking-widest md:py-2.5 pr-0 md:w-[192px] w-[278px] pl-[20px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
             <option className="bg-gray-50">Adultes</option>
             <option className="bg-gray-50">1</option>
             <option className="bg-gray-50">2</option>

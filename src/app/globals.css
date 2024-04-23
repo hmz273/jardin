@@ -52,3 +52,15 @@
 .frstg div:nth-child(2n + 2) {
   padding-top: 4rem;
 }
+
+
+
+.select select{
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.select .img-bg {
+	background-image: url("../../public/drop.svg");
+}

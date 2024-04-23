@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
-      className="pb-32 md:p-[50px] font-quicksand"
+      className="pb-32 md:pb-4 md:p-[50px] font-quicksand"
     >
       <div className="mx-auto w-full px-5">
         <div className="grid grid-cols-1 gap-8 pb-0 pt-[38px] pl-0 md:grid-cols-4">
@@ -15,7 +15,7 @@ const Footer = () => {
                 </p>
               </li>
               <li>
-                <p className="hover:underline font-normal tracking-normal text-[18px] leading-[19.8px] text-[#13191D]">
+                <p className="hover:underline uppercase font-normal tracking-normal text-[18px] leading-[19.8px] text-[#13191D]">
                   Visualiser notre établissement sur la carte
                 </p>
               </li>
@@ -115,7 +115,7 @@ const Footer = () => {
         </p>
         <hr className="h-[2px] w-[90rem] md:-ml-[70px] mt-8 -mb-[30px] bg-gray-100 border-0" />
 
-        <div className="px-0 pb-6 pt-[30px] md:flex md:items-center md:justify-between ">
+        <div className="px-0 pb-6 md:pb-0 pt-[30px] md:flex md:items-center md:justify-between ">
           
           <p className="mt-2 inline-flex items-center justify-center  mr-3 font-normal tracking-widest text-[18px] leading-[28.8px] text-[#3C3A34] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
             © 2024 - Powred By{" "}
@@ -198,7 +198,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
             <a
               href="#"
-              className="text-[#3C3A34] pb-4 md:pt-[28px] inline-flex items-center  font-normal tracking-wider text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="text-[#3C3A34] underline underline-offset-8 pb-4 md:pt-[28px] inline-flex items-center  font-normal tracking-wider text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Technology Providers
               <svg
@@ -230,7 +230,7 @@ const Footer = () => {
 
             <a
               href="#"
-              className="text-[#3C3A34]  inline-flex items-center tracking-normal  font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+              className="text-[#3C3A34] underline underline-offset-8  inline-flex items-center tracking-normal  font-normal text-[18px] leading-[28.8px] rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               Politique de confidentialité
               <svg

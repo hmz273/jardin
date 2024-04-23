@@ -31,13 +31,15 @@ const Testimonial = () => {
               <div className="flex overflow-x-scroll pb-[21px] hide-scroll-bar">
                 <div
                   className="flex flex-nowrap lg:ml-20 md:ml-20 ml-10 m-0"
+                  data-tabs-active-classes="text-[#13191D] hover:text-[#13191D]"
+                  data-tabs-inactive-classes="text-gray-500 hover:text-gray-600"
                   id="default-tab"
                   data-tabs-toggle="#default-tab-content"
                   role="tablist"
                 >
                   <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      className="text-gray-400 focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal uppercase text-[20px] leading-[20px]"
+                      className="text-gray-400 inline-block p-4  font-normal uppercase text-[20px] leading-[20px]"
                       id="tri-tab"
                       data-tabs-target="#tri"
                       type="button"
@@ -50,7 +52,7 @@ const Testimonial = () => {
                   </div>
                   <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      className="text-gray-400 focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal uppercase text-[20px] leading-[20px]"
+                      className="text-gray-400 inline-block p-4  font-normal uppercase text-[20px] leading-[20px]"
                       id="booking-tab"
                       data-tabs-target="#booking"
                       type="button"
@@ -63,7 +65,7 @@ const Testimonial = () => {
                   </div>
                   <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      className="text-gray-400 focus:text-[#13191D] inline-block p-4 hover:text-[#13191D] font-normal uppercase text-[20px] leading-[20px] "
+                      className="text-gray-400 inline-block p-4  font-normal uppercase text-[20px] leading-[20px] "
                       id="cert-tab"
                       data-tabs-target="#cert"
                       type="button"
@@ -174,7 +176,7 @@ const Testimonial = () => {
             </div>
 
             <div
-              className="hidden p-4 rounded-lg w-full bg-[#F4F1E8]"
+              className="hidden rounded-lg w-full bg-[#F4F1E8]"
               id="booking"
               role="tabpanel"
               aria-labelledby="booking-tab"
@@ -191,18 +193,18 @@ const Testimonial = () => {
                     className="hidden duration-700 ease-in-out bg-transparent"
                     data-carousel-item
                   >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <div className="max-w-screen-xl px-4  mx-auto text-center">
                       <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
+                        <p className="md:mt-[6px] md:mb-[17px] font-normal text-[30px] leading-[17.33px] text-[#3C3A34]">
+                          4/5
                         </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
+                        <p className="tracking-normal md:mb-[16px] font-normal text-[28px] leading-[30.8px] text-[#3C3A34] py-4">
                           Tessatess - Tripadvisor
                         </p>
-                        <blockquote>
+                        <blockquote className="md:mb-[45px]">
                           <p
 
-                            className="text-2xl font-normal text-[#3C3A34] font-quicksand"
+                            className="text-center font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
                           >
                             L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre
                           </p>
@@ -210,8 +212,8 @@ const Testimonial = () => {
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
                           <div className="flex items-center divide-gray-500 dark:divide-gray-700">
                             <div
-
-                              className="pr-3 text-lg font-normal font-quicksand text-[#AD936D]"
+                              data-modal-target="testi" data-modal-toggle="testi"
+                              className="tracking-normal text-center uppercase font-normal text-[18px] leading-[19.8px] font-quicksand text-[#AD936D]"
                             >
                               En savoir plus
                             </div>
@@ -224,7 +226,7 @@ const Testimonial = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-0 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-[75px] left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-prev
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full ">
@@ -245,7 +247,7 @@ const Testimonial = () => {
                 </button>
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-0  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-[75px]  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-next
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10">
@@ -268,7 +270,7 @@ const Testimonial = () => {
             </div>
 
             <div
-              className="hidden p-4 rounded-lg w-full bg-[#F4F1E8]"
+              className="hidden rounded-lg w-full bg-[#F4F1E8]"
               id="cert"
               role="tabpanel"
               aria-labelledby="cert-tab"
@@ -285,18 +287,18 @@ const Testimonial = () => {
                     className="hidden duration-700 ease-in-out bg-transparent"
                     data-carousel-item
                   >
-                    <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+                    <div className="max-w-screen-xl px-4  mx-auto text-center">
                       <figure className="max-w-screen-md mx-auto">
-                        <p className="text-2xl font-normal text-[#3C3A34]">
-                          5/5
+                        <p className="md:mt-[6px] md:mb-[17px] font-normal text-[30px] leading-[17.33px] text-[#3C3A34]">
+                          3/5
                         </p>
-                        <p className="text-2xl font-normal text-[#3C3A34] py-4">
+                        <p className="tracking-normal md:mb-[16px] font-normal text-[28px] leading-[30.8px] text-[#3C3A34] py-4">
                           Tessatess - Tripadvisor
                         </p>
-                        <blockquote>
+                        <blockquote className="md:mb-[45px]">
                           <p
 
-                            className="text-2xl font-normal font-quicksand text-[#3C3A34]"
+                            className="text-center font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
                           >
                             L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre
                           </p>
@@ -304,8 +306,8 @@ const Testimonial = () => {
                         <figcaption className="flex items-center justify-center mt-6 space-x-3">
                           <div className="flex items-center divide-gray-500 dark:divide-gray-700">
                             <div
-
-                              className="pr-3 text-lg font-quicksand font-normal text-[#AD936D]"
+                              data-modal-target="testi" data-modal-toggle="testi"
+                              className="tracking-normal text-center uppercase font-normal text-[18px] leading-[19.8px] font-quicksand text-[#AD936D]"
                             >
                               En savoir plus
                             </div>
@@ -318,7 +320,7 @@ const Testimonial = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-0 left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-[75px] left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-prev
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full ">
@@ -339,7 +341,7 @@ const Testimonial = () => {
                 </button>
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-0  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-[75px]  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                   data-carousel-next
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10">

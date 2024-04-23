@@ -4,12 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/logo.png";
 import BookingModel from "../Models/BookingModel";
-// import { Quicksand } from 'next/font/google'
- 
-//  const quicksand = Quicksand({
-//   subsets: ['latin'],
-//   variable: '--font-quick',
-// })
+
+
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -19,12 +15,10 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    let lastScrollTop = 0;
     const handleScroll = () => {
       const currentScrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
-      setIsVisible(currentScrollTop < lastScrollTop || currentScrollTop < 100);
-      lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+      setIsVisible( currentScrollTop < 100);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,24 +30,24 @@ const Nav = () => {
     <div className={`${
             isVisible ? "md:grid md:grid-cols-2 md:h-[150px] md:pl-[70px] fixed w-full z-20 top-0 start-0 bg-opacity-30" : "md:grid md:grid-cols-2 md:h-[6rem] md:pl-[70px] fixed w-full z-20 top-0 start-0 bg-opacity-30 bg-white"
           }`}>
-        <div>
+        <div className="md:pt-4">
           {isVisible ? (<Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
               src={logo}
-              className="md:h-[150px] h-[57px] w-[87px] md:w-[176px]"
+              className="md:h-[116px] h-[57px] w-[87px] md:w-[176px]"
               alt=""
             />
           </Link>) : (
-            <div className="mt-8">
+            <div className="mt-[10px]">
             <a
               href="#"
               
               data-modal-target="extralarge-modal"
               data-modal-toggle="extralarge-modal"
-              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand hover:border hover:px-4 hover:py-1 font-semibold md:text-2xl text-center px-10`}
+              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand hover:border hover:px-4 hover:py-2 font-semibold md:text-2xl text-center px-10`}
             >
               Réservez maintenant
             </a></div>) }
@@ -62,7 +56,7 @@ const Nav = () => {
         <div
           className={`${
             isDropdownOpen ? "bg-white md:h-[50rem] md:w-[46rem]" : ""
-          } py-4 pr-7 mt-6`}
+          } pt-4 pr-7`}
         >
           <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
             {isVisible ? (
@@ -85,7 +79,7 @@ const Nav = () => {
                   data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} hover:border font-quicksand hover:px-4 hover:py-1 font-semibold md:text-[22px] md:leading-[20px] text-center py-2 px-10`}
+                      : "text-gray-50"} hover:border font-quicksand hover:px-4 hover:py-4 font-semibold md:text-[22px] md:leading-[20px] text-center py-2 px-10`}
                 >
                   Réservez maintenant
                 </a><button

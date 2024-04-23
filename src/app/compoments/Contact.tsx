@@ -7,19 +7,18 @@ const Contact = () => {
     <section className="bg-white">
       <div className="grid md:w-[1073px] md:top-[9290.87px] md:left-[184px] max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto md:w-[445px] place-self-center lg:col-span-6">
-          <h1 className="max-w-2xl mb-4 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#3D505A]">
+          <h1 className="max-w-2xl capitalize mb-4 font-normal text-[42px] leading-[46.2px] tracking-wide text-[#3D505A]">
             Demander avant de réserver
           </h1>
 
-          <h1 className="py-4 max-w-xl mb-4 font-normal text-[28px] leading-[30.8px] tracking-tight text-[#3D505A]">
+          <h1 className="py-4 w-[21rem] capitalize mb-4 font-normal text-[28px] leading-[30.8px] tracking-normal text-[#3D505A]">
             Les Jardins De Zyriab Resort & Spa
           </h1>
           <p
             
             className="max-w-2xl mb-6 text-gray-500 lg:mb-8 font-quicksand font-normal text-[18px] leading-[28.8px] dark:text-gray-400"
           >
-            Avenue Echouhada-Quartier De L'hivernage, L’Hivernage, 40000
-            Marrakech, Maroc
+            Km 13 Route De L’Ourika – Canal De Zaraba, 40000 Aït Hamid, Maroc
           </p>
           <div className="py-4 flex space-x-5">
             <a
@@ -61,12 +60,12 @@ const Contact = () => {
               <span className="text-gray-500 sr-only">FB</span>
             </a>
           </div>
-          <div className="py-4 text-gray-500 font-quicksand">
+          <div className="py-4 opacity-60 text-[#3C3A34] font-quicksand font-normal text-[18px] leading-[28.8px]">
             <span>
               Longitude : -8.00317526
             </span>
           </div>
-          <div className="text-gray-500 font-quicksand mb-4">
+          <div className=" opacity-60 text-[#3C3A34] font-quicksand font-normal text-[18px] leading-[28.8px] mb-4">
             <span>
               {" "}
               Latitude : 31.62674178
@@ -74,7 +73,7 @@ const Contact = () => {
           </div>
           <p
             
-            className="text-gray-500 pt-4 font-normal font-quicksand text-[18px] leading-[19.8px]"
+            className="text-gray-500 uppercase pt-4 font-normal font-quicksand text-[18px] leading-[19.8px]"
           >
             Visualiser notre établissement sur la carte
           </p>
@@ -131,8 +130,9 @@ const Contact = () => {
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
-              <input
-                type="text"
+              <textarea
+                // type="text"
+                rows={3}
                 name="sujet"
                 id="floating_sujet"
                 className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
