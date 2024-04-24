@@ -49,7 +49,7 @@ const Rooms = () => {
                       <Link
                         
                         href="/room"
-                        className="w-[231px] md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
+                        className="w-[231px] uppercase md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -101,7 +101,7 @@ const Rooms = () => {
                       <Link
                         
                         href="/room"
-                        className="w-[231px] md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
+                        className="w-[231px] uppercase md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -153,7 +153,7 @@ const Rooms = () => {
                       <Link
                         
                         href="/room"
-                        className="w-[231px] md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
+                        className="w-[231px] uppercase md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
                       >
                         Découvrir
                         <svg
@@ -205,7 +205,7 @@ const Rooms = () => {
                       <Link
                         
                         href="/room"
-                        className="w-[231px] md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
+                        className="w-[231px] uppercase md:px-10 md:py-4 inline-flex justify-center font-quicksand items-center text-center border border-[#13191D] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] text-[#13191D]  me-2 mb-2"
                       >
                         Découvrir
                         <svg

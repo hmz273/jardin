@@ -18,7 +18,7 @@ const Booking = () => {
       <div className="grid md:grid-cols-3 mx-auto grid-cols-1  -mb-[28px] md:py-8 py-4 md:w-[1079px] md:h-[170px] md:gap-[15rem]">
         <div>
           <DatePicker
-            className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[26px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[26px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholderText="Check-in"
             minDate={new Date()}
             selected={checkInDate}
@@ -29,7 +29,7 @@ const Booking = () => {
 
         <div>
           <DatePicker
-            className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[30px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            className="custom-date-input tracking-wider block py-6 md:py-2.5 pr-0 md:w-[26rem] pl-[30px] w-[278px] gap-[10px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             placeholderText="Check-out"
             minDate={new Date()}
             selected={checkOutDate}
@@ -39,7 +39,7 @@ const Booking = () => {
         </div>
 
         <div className="select">
-          <select className="block img-bg py-6 tracking-widest md:py-2.5 pr-0 md:w-[192px] w-[278px] pl-[20px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+          <select className="block img-bg py-6 tracking-widest md:py-2.5 pr-0 md:w-[192px] w-[278px] pl-[20px] font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer">
             <option className="bg-gray-50">Adultes</option>
             <option className="bg-gray-50">1</option>
             <option className="bg-gray-50">2</option>

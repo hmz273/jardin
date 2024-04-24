@@ -85,7 +85,7 @@ const Contact = () => {
                 type="text"
                 name="floating_first_name"
                 id="floating_first_name"
-                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
@@ -101,7 +101,7 @@ const Contact = () => {
                 type="email"
                 name="floating_email"
                 id="floating_email"
-                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
@@ -118,7 +118,7 @@ const Contact = () => {
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 name="floating_phone"
                 id="floating_phone"
-                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
@@ -135,7 +135,7 @@ const Contact = () => {
                 rows={3}
                 name="sujet"
                 id="floating_sujet"
-                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
@@ -151,7 +151,7 @@ const Contact = () => {
                 type="text"
                 name="text"
                 id="floating_text"
-                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
               />
@@ -166,7 +166,7 @@ const Contact = () => {
               <div className="relative z-0 w-full mb-5 group">
                 <input
                   type="text"
-                  className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  className="block py-2.5 px-0 w-full font-normal text-[18px] leading-[25.2px] text-gray-900 bg-transparent border-0 border-b-2 border-[#3C3A34] appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
                 />
@@ -182,7 +182,7 @@ const Contact = () => {
             <button
               
               type="submit"
-              className="text-gray-900 bg-white border font-quicksand border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-normal text-[18px] leading-[19.8px] px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              className="text-gray-900 uppercase bg-white border font-quicksand border-[#3C3A34] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-normal text-[18px] leading-[19.8px] px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             >
               Envoyer
             </button>

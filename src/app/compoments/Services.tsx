@@ -14,7 +14,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col bg-white m-auto p-auto w-full pl-[37px]">
-          <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
+          <div className="flex overflow-x-scroll scroll-bar pb-10">
             <div className="flex flex-nowrap lg:ml-20 frst md:ml-20 ml-10 m-0 gap-[44px]">
               <div className="inline-block px-3 md:w-[404px] w-[18rem]">
                 <div className="h-auto md:w-[400px] max-w-lg overflow-hidden duration-300 ease-in-out">

@@ -4,7 +4,7 @@ import img from "../../../../public/image.png";
 
 const Services = () => {
   return (
-    <section>
+    <section className="pb-32 md:pb-4 md:p-[50px] font-quicksand">
       <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 tracking-tight font-normal leading-[63.8px] text-[58px] text-gray-700">

@@ -6,7 +6,7 @@ const Details = () => {
     console.log(roomDetails);
     
   return (
-    <section>
+    <section className="pb-32 md:pb-4 md:p-[50px] font-quicksand">
       <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
       <div className="grid md:grid-cols-2 gap-4 divide-y-2 md:divide-x-2">
         <div>

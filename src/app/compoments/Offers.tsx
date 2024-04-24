@@ -38,7 +38,7 @@ const Offers = () => {
                       <button
                         
                         type="button"
-                        className="py-1 pr-5 me-2 mt-[13px] font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
+                        className="py-1 pr-5 me-2 mt-[13px] uppercase font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >
                         <p className=" tracking-widest">En savoir plus</p>
                       </button>
@@ -69,7 +69,7 @@ const Offers = () => {
                       <button
                         
                         type="button"
-                        className="py-1 pr-5 me-2 mt-[13px] font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
+                        className="py-1 pr-5 me-2 mt-[13px] uppercase font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >
                         <p className=" tracking-widest">En savoir plus</p>
                       </button>
@@ -100,7 +100,7 @@ const Offers = () => {
                       <button
                         
                         type="button"
-                        className="py-1 pr-5 me-2 mt-[13px] font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
+                        className="py-1 pr-5 me-2 mt-[13px] uppercase font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >
                         <p className=" tracking-widest">En savoir plus</p>
                       </button>
@@ -131,7 +131,7 @@ const Offers = () => {
                       <button
                         
                         type="button"
-                        className="py-1 pr-5 me-2 mt-[13px] font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
+                        className="py-1 pr-5 me-2 mt-[13px] uppercase font-normal font-quicksand text-[18px] leading-[19.8px] text-[#AD936D] focus:outline-none"
                       >
                         <p className=" tracking-widest">En savoir plus</p>
                       </button>

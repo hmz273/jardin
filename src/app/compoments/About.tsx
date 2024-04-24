@@ -40,10 +40,10 @@ const About = () => {
           <a
             href="#"
             data-modal-target="about-modal" data-modal-toggle="about-modal"
-            className="hidden text-left tracking-tight uppercase md:inline-flex mr-3 font-quicksand font-normal text-[18px] leading-[19.8px] text-yellow-700"
+            className="hidden text-left tracking-tight uppercase md:inline-flex mr-3 font-quicksand font-normal text-[18px] leading-[19.8px] text-[#AD936D]"
           >
             En savoir plus
-            <svg
+            {/* <svg
               className="w-5 h-5 ml-2 -mr-1"
               fill="currentColor"
               viewBox="0 0 20 20"
@@ -54,7 +54,7 @@ const About = () => {
                 d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
                 clip-rule="evenodd"
               ></path>
-            </svg>
+            </svg> */}
           </a>
         </div>
         <div className="md:h-[564px] pl-[12px] md:w-[413px] lg:mt-0 lg:col-span-5 lg:flex">

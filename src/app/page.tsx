@@ -34,7 +34,7 @@ export default function Home() {
     <Contact/>
     <OfferSp/>
     <Footer/>
-    <BottomNav/>
+    {/* <BottomNav/> */}
     </>
   );
 }

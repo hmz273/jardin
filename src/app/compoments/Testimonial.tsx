@@ -39,7 +39,7 @@ const Testimonial = () => {
                 >
                   <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      className="text-gray-400 inline-block p-4  font-normal uppercase text-[20px] leading-[20px]"
+                      className="text-gray-400 inline-block p-4 font-quicksand focus:text-[#13191D] font-normal uppercase text-[20px] leading-[20px]"
                       id="tri-tab"
                       data-tabs-target="#tri"
                       type="button"
@@ -52,7 +52,7 @@ const Testimonial = () => {
                   </div>
                   <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      className="text-gray-400 inline-block p-4  font-normal uppercase text-[20px] leading-[20px]"
+                      className="text-gray-400 inline-block p-4 font-quicksand focus:text-[#13191D] font-normal uppercase text-[20px] leading-[20px]"
                       id="booking-tab"
                       data-tabs-target="#booking"
                       type="button"
@@ -65,7 +65,7 @@ const Testimonial = () => {
                   </div>
                   <div className="inline-block px-3 md:w-[408px]" role="presentation">
                     <button
-                      className="text-gray-400 inline-block p-4  font-normal uppercase text-[20px] leading-[20px] "
+                      className="text-gray-400 inline-block p-4 font-quicksand focus:text-[#13191D] font-normal uppercase text-[20px] leading-[20px] "
                       id="cert-tab"
                       data-tabs-target="#cert"
                       type="button"

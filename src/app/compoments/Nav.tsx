@@ -47,7 +47,7 @@ const Nav = () => {
               
               data-modal-target="extralarge-modal"
               data-modal-toggle="extralarge-modal"
-              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand hover:border hover:px-4 hover:py-2 font-semibold md:text-2xl text-center px-10`}
+              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand hover:border px-4 py-2 font-semibold md:text-2xl text-center `}
             >
               Réservez maintenant
             </a></div>) }
@@ -55,7 +55,7 @@ const Nav = () => {
         </div>
         <div
           className={`${
-            isDropdownOpen ? "bg-white md:h-[50rem] md:w-[46rem]" : ""
+            isDropdownOpen ? "bg-white h-dvh md:w-[46rem]" : ""
           } pt-4 pr-7`}
         >
           <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
@@ -63,13 +63,13 @@ const Nav = () => {
               <><a
                 href="#"
                 
-                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
+                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} px-4 py-2 text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
               >
                 FR
               </a><a
                 href="#"
                 
-                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
+                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} px-4 py-2 text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
               >
                   EUR
                 </a><a
@@ -79,7 +79,7 @@ const Nav = () => {
                   data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} hover:border font-quicksand hover:px-4 hover:py-4 font-semibold md:text-[22px] md:leading-[20px] text-center py-2 px-10`}
+                      : "text-gray-50"} hover:border font-quicksand px-4 py-4 font-semibold md:text-[22px] md:leading-[20px] text-center `}
                 >
                   Réservez maintenant
                 </a><button

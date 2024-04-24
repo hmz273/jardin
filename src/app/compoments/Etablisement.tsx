@@ -25,7 +25,7 @@ const Etablisement = () => {
                 >
                 <div className="inline-block pr-3 md:pl-[24px]" role="presentation">
                     <button
-                      className="text-gray-400 capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
+                      className="text-gray-400 focus:text-[#13191D] capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
                       id="cafe-tab"
                       data-tabs-target="#cafe"
                       type="button"
@@ -38,7 +38,7 @@ const Etablisement = () => {
                   </div>
                   <div className="inline-block pr-3 md:pl-[24px]" role="presentation">
                     <button
-                      className="text-gray-400 capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
+                      className="text-gray-400 focus:text-[#13191D] capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
                       id="cafe-tab"
                       data-tabs-target="#cafe"
                       type="button"
@@ -51,7 +51,7 @@ const Etablisement = () => {
                   </div>
                   <div className="inline-block pr-3 md:pl-[24px]" role="presentation">
                     <button
-                      className="text-gray-400 capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
+                      className="text-gray-400 focus:text-[#13191D] capitalize inline-block p-4 font-normal text-[28px] leading-[30.8px]"
                       id="cafe-tab"
                       data-tabs-target="#cafe"
                       type="button"
