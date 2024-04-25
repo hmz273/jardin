@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 
 import img from "../../../public/about.png";
-const AboutModel = () => {
+const AboutModel = ({about, title, souTitle}) => {
   return (
     <>
     <div id="about-modal" tabIndex={-1} className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 ">
@@ -21,10 +21,10 @@ const AboutModel = () => {
             {/* <!-- Modal body --> */}
             {/* <div className='gap-[10px]'> */}
               <h3 className="font-normal md:text-[41px] md:leading-[37.4px] tracking-[1px] text-center capitalize mb-[48px] text-gray-900 dark:text-white">
-              Les Jardins De Zyriab Resort & Spa
+              {title}
               </h3>
               <h5 className="font-normal md:text-[30px] md:leading-[26.4px] tracking-[1px] text-center uppercase font-quicksand text-gray-900 dark:text-white">
-              B&B / Chambre d'hôtes à Marrakech
+              {souTitle}
               </h5>
               {/* </div> */}
             <div className="grid grid-cols-2 pt-16 pl-[56px] pr-[10px] gap-4">
@@ -35,10 +35,7 @@ const AboutModel = () => {
 
             <div className="p-4 md:p-5 space-y-4">
               <p className="font-quicksand tracking-widest font-normal text-[18px] leading-[28.8px] md:w-[32rem] text-gray-500 dark:text-gray-400">
-              La charmante résidence hôtelière Les Jardins De Zyriab Resort & Spa  propose une grande piscine extérieure, un hammam et des massages  d'aromathérapie. Elle est située à seulement 15 minutes en voiture de la  médina de Marrakech.
-
-Les suites confortables comprennent une cuisine entièrement équipée.  Une connexion Wi-Fi est disponible gratuitement dans le hall. Chaque  suite dispose d'une télévision à écran plat, d'une terrasse privée et  d'une vue sur les montagnes de l'Atlas. Vous bénéficierez gratuitement  d'un service d'étage.
-L'établissement Les Jardins possède un salon de thé traditionnel. Son restaurant sert des plats marocains authentiques.
+                {about}
               </p>
             </div>
 

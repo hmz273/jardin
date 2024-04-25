@@ -10,11 +10,11 @@ const BookingModel = () => {
       <div
         id="extralarge-modal"
         tabIndex={-1}
-        className="fixed z-50 hidden overflow-x-hidden overflow-y-auto "
+        className="fixed z-50 hidden overflow-x-hidden overflow-y-auto"
       >
-        <div className="relative w-[90rem]">
+        <div className="relative  w-dvw h-dvh">
           {/* <!-- Modal content --> */}
-          <div className="relative bg-[#3D505A] px-52 shadow h-[57rem]">
+          <div className="relative bg-[#3D505A] px-52 shadow">
             {/* <!-- Modal header --> */}
             <div className="flex items-center justify-between  md:pt-2 md:w-[74rem]">
               <button

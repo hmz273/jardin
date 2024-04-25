@@ -47,7 +47,7 @@ const Nav = () => {
               
               data-modal-target="extralarge-modal"
               data-modal-toggle="extralarge-modal"
-              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand hover:border px-4 py-2 font-semibold md:text-2xl text-center `}
+              className={`${isDropdownOpen ? (isVisible ? 'text-gray-900' : 'text-gray-50') : ''} font-quicksand border border-transparent hover:border-gray-300 px-4 py-2 font-semibold md:text-2xl text-center `}
             >
               Réservez maintenant
             </a></div>) }
@@ -79,7 +79,7 @@ const Nav = () => {
                   data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} hover:border font-quicksand px-4 py-4 font-semibold md:text-[22px] md:leading-[20px] text-center `}
+                      : "text-gray-50"} border border-transparent hover:border-gray-300 font-quicksand px-4 py-4 font-semibold md:text-[22px] md:leading-[20px] text-center `}
                 >
                   Réservez maintenant
                 </a><button

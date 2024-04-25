@@ -328,7 +328,7 @@ const getCurrentDate = () => {
           <a
             href="#gellery"
             
-            className="inline-flex uppercase justify-center font-quicksand tracking-tighter items-center text-center text-[#F4F1E8] hover:border hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] opacity-60 px-10 pl-4 pt-4 py-2.5 me-2 mb-2"
+            className="inline-flex uppercase justify-center font-quicksand tracking-tighter items-center text-center text-[#F4F1E8] border border-transparent hover:border-gray-300 focus:outline-none font-normal text-[18px] leading-[19.8px] px-10 pl-4 pt-4 py-2.5 me-2 mb-2"
           >
             Galeries Photo
             <svg

@@ -76,11 +76,13 @@ const Testimonial = () => {
                       Certificats d'excellence
                     </button>
                   </div>
+
                 </div>
               </div>
             </div>
           </div>
           <div id="default-tab-content">
+
             <div
               className="hidden  rounded-lg w-full bg-[#F4F1E8]"
               id="tri"
@@ -362,6 +364,7 @@ const Testimonial = () => {
                 </button>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
