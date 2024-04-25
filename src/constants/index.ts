@@ -12,7 +12,7 @@ export const roomDetailsData: roomDetails = {
 export const about: aboutDetails = {
   title: "Les Jardins De Zyriab Resort & Spa",
   souTitle: "B&B / Chambre d'hôtes à Marrakech",
-  description: "La charmante résidence hôtelière Les Jardins De Zyriab Resort & Spa  propose une grande piscine extérieure, un hammam et des massages  d'aromathérapie. Elle est située à seulement 15 minutes en voiture de la  médina de Marrakech.Les suites confortables comprennent une cuisine entièrement équipée.  Une connexion Wi-Fi est disponible gratuitement dans le hall. Chaque  suite dispose d'une télévision à écran plat",
+  description: "La charmante résidence hôtelière Les Jardins De Zyriab Resort & Spa propose une grande piscine extérieure, un hammam et des massages d'aromathérapie. Elle est située à seulement 15 minutes en voiture de la médina de Marrakech.Les suites confortables comprennent une cuisine entièrement équipée. Une connexion Wi-Fi est disponible gratuitement dans le hall. Chaque suite dispose d'une télévision à écran plat La charmante résidence hôtelière Les Jardins De Zyriab Resort & Spa propose une grande piscine extérieure, un hammam et des massages d'aromathérapie. Elle est située à seulement 15 minutes en voiture de la médina de Marrakech.Les suites confortables comprennent une cuisine entièrement équipée. Une connexion Wi-Fi est disponible gratuitement dans le hall. Chaque suite dispose d'une télévision à écran plat La charmante résidence hôtelière Les Jardins De Zyriab Resort & Spa propose une grande piscine extérieure, un hammam et des massages d'aromathérapie. Elle est située à seulement 15 minutes en voiture de la médina de Marrakech.Les suites confortables comprennent une cuisine entièrement équipée. Une connexion Wi-Fi est disponible gratuitement dans le hall. Chaque suite dispose d'une télévision à écran plat",
 };
 
 export const roomsData: Room[] = [
@@ -40,38 +40,38 @@ export const roomsData: Room[] = [
 export const serviceData: Service[] = [
   {
     id: "1",
-    title: "Réserver 5 nuits",
-    description: "Pour toute réservation via notre Site Web uniquement dépassant 5 nuitées",
+    title: "Réserver 1 nuits",
+    description: "Pour toute réservation via notre Site Web uniquement dépassant 5  nuitées, nous avons le plaisir de vous offrir votre transfert arrivée  aéroport  jusqu'à 4 personnes maximum Nous vous remercions de nous le signifier lors de votre réservation.",
     offert: "offert",
   },
   {
     id: "2",
-    title: "Réserver 5 nuits",
-    description: "Pour toute réservation via notre Site Web uniquement dépassant 5 nuitées",
+    title: "Réserver 2 nuits",
+    description: "Pour toute réservation via notre Site Web uniquement dépassant 5  nuitées, nous avons le plaisir de vous offrir votre transfert arrivée  aéroport  jusqu'à 4 personnes maximum Nous vous remercions de nous le signifier lors de votre réservation.",
     offert: "offert",
   },
   {
     id: "3",
-    title: "Réserver 5 nuits",
-    description: "Pour toute réservation via notre Site Web uniquement dépassant 5 nuitées",
+    title: "Réserver 3 nuits",
+    description: "Pour toute réservation via notre Site Web uniquement dépassant 5  nuitées, nous avons le plaisir de vous offrir votre transfert arrivée  aéroport  jusqu'à 4 personnes maximum Nous vous remercions de nous le signifier lors de votre réservation",
     offert: "offert",
   },
   {
     id: "4",
-    title: "Réserver 5 nuits",
-    description: "Pour toute réservation via notre Site Web uniquement dépassant 5 nuitées",
+    title: "Réserver 4 nuits",
+    description: "Pour toute réservation via notre Site Web uniquement dépassant 5  nuitées, nous avons le plaisir de vous offrir votre transfert arrivée  aéroport  jusqu'à 4 personnes maximum Nous vous remercions de nous le signifier lors de votre réservation.",
     offert: "offert",
   },
   {
     id: "5",
     title: "Réserver 5 nuits",
-    description: "Pour toute réservation via notre Site Web uniquement dépassant 5 nuitées",
+    description: "Pour toute réservation via notre Site Web uniquement dépassant 5  nuitées, nous avons le plaisir de vous offrir votre transfert arrivée  aéroport  jusqu'à 4 personnes maximum Nous vous remercions de nous le signifier lors de votre réservation.",
     offert: "offert",
   },
   {
     id: "6",
-    title: "Réserver 5 nuits",
-    description: "Pour toute réservation via notre Site Web uniquement dépassant 5 nuitées",
+    title: "Réserver 6 nuits",
+    description: "Pour toute réservation via notre Site Web uniquement dépassant 5  nuitées, nous avons le plaisir de vous offrir votre transfert arrivée  aéroport  jusqu'à 4 personnes maximum Nous vous remercions de nous le signifier lors de votre réservation.",
     offert: "offert",
   },
 ];
@@ -80,32 +80,32 @@ export const ofSpecialData: ofSpecial[] = [
   {
     id: "1",
     title: "Vacation – 20% Off",
-    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
+    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
   },
   {
     id: "2",
     title: "Vacation – 20% Off",
-    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
+    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
   },
   {
     id: "3",
     title: "Vacation – 20% Off",
-    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
+    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
   },
   {
     id: "4",
     title: "Vacation – 20% Off",
-    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
+    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
   },
   {
     id: "5",
     title: "Vacation – 20% Off",
-    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
+    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
   },
   {
     id: "6",
     title: "Vacation – 20% Off",
-    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
+    description: "Profitez de 25 % de réduction sur notre tarif Bed and Breakfast lorsque vous séjournez trois nuits supplémentaires",
   },
 ];
 

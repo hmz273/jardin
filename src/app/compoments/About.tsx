@@ -22,7 +22,7 @@ const About = () => {
           </h3>
           <p
 
-            className=" md:text-left mb-6 font-quicksand font-normal text-[18px] leading-[28.8px] text-gray-500 lg:mb-8 dark:text-gray-400"
+            className=" md:text-left mb-6 font-quicksand font-normal line-clamp-[7] text-[18px] leading-[28.8px] text-gray-500 lg:mb-8 dark:text-gray-400"
           >
             {about.description}
           </p>

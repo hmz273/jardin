@@ -112,7 +112,7 @@ const Testimonial = () => {
                         <blockquote className="md:mb-[45px]">
                           <p
 
-                            className="text-center font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
+                            className="text-center line-clamp-4 font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
                           >
                             L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre
                           </p>
@@ -206,7 +206,7 @@ const Testimonial = () => {
                         <blockquote className="md:mb-[45px]">
                           <p
 
-                            className="text-center font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
+                            className="text-center line-clamp-4 font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
                           >
                             L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre
                           </p>
@@ -300,7 +300,7 @@ const Testimonial = () => {
                         <blockquote className="md:mb-[45px]">
                           <p
 
-                            className="text-center font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
+                            className="text-center line-clamp-4 font-normal text-[22px] leading-[39.6px] font-quicksand text-[#3C3A34]"
                           >
                             L’emplacement de cet hôtel est très appréciable ! On n’est pas très loin de la place et il y a de nombreux restaurants à côté ! En ce qui concerne la piscine, elle est très propre peut-être un peu petite, nous avons eu de la chance qu’il n’y ai pas grand monde lors de notre
                           </p>

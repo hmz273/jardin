@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import img from "../../../public/about.png";
 
-const ServicesModel = () => {
+const ServicesModel = ({ titleModel, idm, descriptionModel, offertModel }) => {
   return (
     <>
       <div
@@ -52,17 +52,16 @@ const ServicesModel = () => {
                 />
               </div>
 
-              <div className="md:pb-5 md:pt-[30px] md:pl-[28px] space-y-4">
+              <div className="md:pb-5 text-left md:pt-[30px] md:pl-[28px] space-y-4">
                 <h3 className="font-normal md:text-[42px] md:leading-[46.2px] tracking-widest capitalize mb-[60px] text-gray-900 dark:text-white">
-                  Réserver 5 nuits
+                  {titleModel} {idm}
                 </h3>
                 <p className="font-quicksand tracking-widest font-normal capitalize text-[18px] leading-[28.8px] md:w-[32rem] text-gray-500 dark:text-gray-400">
-                  Pour toute réservation via notre Site Web uniquement dépassant
-                  5 nuitées, nous avons le plaisir de vous offrir votre
-                  transfert arrivée aéroport ( jusqu'à 4 personnes maximum).
-                  Nous vous remercions de nous le signifier lors de votre
-                  réservation.
+                {descriptionModel}
                 </p>
+            <p className="mb-[45px] font-normal font-quicksand text-[18px] leading-[28.8px] py-5">
+              {offertModel}
+            </p>
               </div>
             </div>
           </div>

@@ -17,7 +17,7 @@ const OffreCard = ({ id, title, description }) => {
             <h5 className="mb-[36px] font-normal text-[34px] leading-[37.4px] text-[#13191D] tracking-normal">
               {title}
             </h5>
-            <p className="mb-3 font-normal text-[18px] font-quicksand leading-[28.8px] text-[#13191D]">
+            <p className="mb-3 font-normal line-clamp-2 text-[18px] font-quicksand leading-[28.8px] text-[#13191D]">
               {description}
             </p>
 

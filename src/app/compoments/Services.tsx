@@ -1,5 +1,4 @@
 import React from "react";
-import ServicesModel from "../Models/ServicesModel";
 import ServiceCard from "./cards/ServiceCard";
 import { serviceData } from "@/constants";
 
@@ -31,7 +30,6 @@ const Services = () => {
           </div>
         </div>
       </section>
-      <ServicesModel />
     </>
   );
 };
