@@ -1,4 +1,4 @@
-import { roomDetails, aboutDetails, Room, Service, ofSpecial, Testi } from "../types";
+import { roomDetails, aboutDetails, Room, Service, ofSpecial, Testi, Siteinfo, TradEn, TradFr } from "../types";
 
 export const roomDetailsData: roomDetails = {
   guests: 4,
@@ -132,3 +132,19 @@ export const testiData: Testi[] = [
     platform: "cert",
   },
 ];
+
+export const siteinfo: Siteinfo = {
+  pTemplate: "jardin",
+  };
+ 
+export const tradEn: TradEn = {
+  title: "Sirayane Boutique Hotel & Spa Marrakech EN",
+  description: "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses"
+
+};
+ 
+export const tradFr: TradFr = {
+  title: "Sirayane Boutique Hotel & Spa Marrakech FR",
+  description: "LSitu&eacute; &agrave; environ 10 minutes de l&rsquo;a&eacute;roport de Marrakech, 15 mn de l&#39;avenue Mohamed VI, de la m&eacute;dina, &nbsp;et endroits branch&eacute;s de la ville ocre, entour&eacute; de 09 terrains de golf et encercl&eacute; par les montagnes enneig&eacute;es de l&#39;Atlas, et par une v&eacute;g&eacute;tation luxuriante,&nbsp; Le Sirayane invite au d&eacute;paysement total et au bien-&ecirc;tre. Boutique H&ocirc;tel &amp; Spa de luxe r&eacute;alis&eacute; par le c&eacute;l&egrave;bre architecte Imaad Rahmouni , Le Sirayane jouit d&#39;un d&eacute;cor exceptionnel"
+
+};

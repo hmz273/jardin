@@ -82,7 +82,8 @@ const Nav = () => {
                       : "text-gray-50"} border border-transparent hover:border-gray-300 font-quicksand px-4 py-4 font-semibold md:text-[22px] md:leading-[20px] text-center `}
                 >
                   Réservez maintenant
-                </a><button
+                </a>
+                <button
                   
                   className={`${isDropdownOpen ? "text-gray-900" : "text-gray-50"} font-quicksand md:flex items-center justify-between w-full py-2 px-3 md:p-0 md:w-auto hidden font-normal text-lg`}
                   onClick={toggleDropdown}

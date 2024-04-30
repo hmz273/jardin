@@ -44,3 +44,19 @@ export interface Testi {
   platform: string;
   // add other properties as needed
 }
+
+export interface TradEn {
+  title: string;
+  description: string;
+
+}
+
+export interface TradFr {
+  title: string;
+  description: string;
+
+}
+
+export interface Siteinfo {
+  pTemplate: string;
+  }

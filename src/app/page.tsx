@@ -1,6 +1,7 @@
 import NavBar from "./compoments/NavBar";
 import Hero from "./compoments/Hero";
 import About from "./compoments/About";
+import AboutRev from "./compoments/AboutRev";
 import Rooms from "./compoments/Rooms";
 import Offers from "./compoments/Offers";
 import Testimonial from "./compoments/Testimonial";
@@ -14,6 +15,9 @@ import OfferSp from "./compoments/OfferSp";
 import Footer from "./compoments/Footer";
 import BottomNav from "./compoments/BottomNav";
 import Nav from "./compoments/Nav";
+import Loading from "./compoments/Loading";
+
+import { siteinfo } from "@/constants"
 
 
 export default function Home() {
@@ -22,7 +26,16 @@ export default function Home() {
     {/* <NavBar/> */}
     <Nav />
     <Hero/>
+
     <About/>
+    {/* <AboutRev /> */}
+    {/* <div>
+      {siteinfo.pTemplate === 15 ? (
+        <About />
+      ) : (
+        <Loading />
+      )}
+    </div> */}
     <Rooms/>
     <Offers/>
     <Testimonial/>
