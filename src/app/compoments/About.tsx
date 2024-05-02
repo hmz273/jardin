@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import AboutModel from "../Models/AboutModel";
 import Image from "next/image";
-import { about, tradEn, tradFr, tradAr } from "@/constants"
+import { about, tradEn, tradFr, tradAr, siteinfo } from "@/constants"
 
 import img from "../../../public/about.png";
 
@@ -23,6 +23,8 @@ const About = () => {
   };  
 
   const aboutDetails = translations[language];
+
+  const etabTypeLabel = aboutDetails.etabTypeLabel[siteinfo.etabType];
 
   return (
     <><section className="md:mt-28 md:mx-auto md:w-[1075px] md:h-[564px] md:top-[1063px] md:left-[183px]">
@@ -44,7 +46,7 @@ const About = () => {
             className="md:text-left uppercase py-12 font-quicksand font-normal text-[24px] leading-[26.4px] tracking-normal text-gray-800"
 
           >
-            {about.souTitle}
+            {etabTypeLabel} {aboutDetails.souTitle}
           </h3>
           <p
 

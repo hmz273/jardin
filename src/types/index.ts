@@ -48,21 +48,28 @@ export interface Testi {
 export interface TradEn {
   title: string;
   description: string;
+  souTitle: string;
+  etabTypeLabel: { [key: number]: string };
 
 }
 
 export interface TradFr {
   title: string;
   description: string;
+  souTitle: string;
+  etabTypeLabel: { [key: number]: string };
 
 }
 
 export interface TradAr {
   title: string;
   description: string;
+  souTitle: string;
+  etabTypeLabel: { [key: number]: string };
 
 }
 
 export interface Siteinfo {
   pTemplate: string;
+  etabType: number;
   }
