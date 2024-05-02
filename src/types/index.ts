@@ -57,6 +57,12 @@ export interface TradFr {
 
 }
 
+export interface TradAr {
+  title: string;
+  description: string;
+
+}
+
 export interface Siteinfo {
   pTemplate: string;
   }

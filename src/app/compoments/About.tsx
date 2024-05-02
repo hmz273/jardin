@@ -3,23 +3,37 @@
 import React, { useState } from "react";
 import AboutModel from "../Models/AboutModel";
 import Image from "next/image";
-import { about, tradEn, tradFr } from "@/constants"
+import { about, tradEn, tradFr, tradAr } from "@/constants"
 
 import img from "../../../public/about.png";
 
 const About = () => {
   const [language, setLanguage] = useState('fr'); // Default language is French
 
-  const toggleLanguage = () => {
-    
-    setLanguage(language === 'fr' ? 'en' : 'fr'); // Toggle between French and English
+  const handleLanguageChange = (event) => {
+    setLanguage(event.target.value);
   };
 
-  const aboutDetails = language === 'fr' ? tradFr : tradEn;
-  
+  // Translation data for each language
+  const translations = {
+    fr: tradFr,
+    en: tradEn,
+    ar: tradAr,
+    // Add translations for other languages here
+  };  
+
+  const aboutDetails = translations[language];
+
   return (
     <><section className="md:mt-28 md:mx-auto md:w-[1075px] md:h-[564px] md:top-[1063px] md:left-[183px]">
-      <button onClick={toggleLanguage}>Switch Language</button>
+
+      <select value={language} onChange={handleLanguageChange}>
+        <option value="fr">French</option>
+        <option value="en">English</option>
+        <option value="ar">Arabe</option>
+        {/* Add options for other languages here */}
+      </select>
+
       <div className="grid max-w-screen-xl md:w-[70rem] py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center md:w-[524px] md:h-[445px] md:gap-[50px]  lg:col-span-7">
           <h3 className=" md:text-lef font-normal md:text-[34px] md:leading-[37.4px] text-[42px] leading-[46.2px] tracking-normal text-gray-800">

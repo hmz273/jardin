@@ -1,4 +1,4 @@
-import { roomDetails, aboutDetails, Room, Service, ofSpecial, Testi, Siteinfo, TradEn, TradFr } from "../types";
+import { roomDetails, aboutDetails, Room, Service, ofSpecial, Testi, Siteinfo, TradEn, TradFr, TradAr } from "../types";
 
 export const roomDetailsData: roomDetails = {
   guests: 4,
@@ -146,5 +146,11 @@ export const tradEn: TradEn = {
 export const tradFr: TradFr = {
   title: "Sirayane Boutique Hotel & Spa Marrakech FR",
   description: "LSitu&eacute; &agrave; environ 10 minutes de l&rsquo;a&eacute;roport de Marrakech, 15 mn de l&#39;avenue Mohamed VI, de la m&eacute;dina, &nbsp;et endroits branch&eacute;s de la ville ocre, entour&eacute; de 09 terrains de golf et encercl&eacute; par les montagnes enneig&eacute;es de l&#39;Atlas, et par une v&eacute;g&eacute;tation luxuriante,&nbsp; Le Sirayane invite au d&eacute;paysement total et au bien-&ecirc;tre. Boutique H&ocirc;tel &amp; Spa de luxe r&eacute;alis&eacute; par le c&eacute;l&egrave;bre architecte Imaad Rahmouni , Le Sirayane jouit d&#39;un d&eacute;cor exceptionnel"
+
+};
+ 
+export const tradAr: TradAr = {
+  title: "فندق وسبا سيرايان بوتيك مراكش Ar",
+  description: "على بعد 10 دقائق من مطار مراكش، 15 دقيقة من شارع محمد السادس، المدينة المنورة، وفرع إندرويتس من لا فيل أوكر، محيط. دي 09 تضاريس الجولف والإغلاق؛ من خلال الجبال الممتدة من الأطلس، ومن خلال رحلة"
 
 };
