@@ -4,11 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../public/logo.png";
 import BookingModel from "../Models/BookingModel";
+import { useRouter } from "next/router";
 
 
-const Nav = () => {
+const Nav = ({ onTemplateChange, onLanguageChange  }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [selectedTemplate, setSelectedTemplate] = useState('jardin');
+  const [language, setLanguage] = useState('fr'); // Default language is French
+
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -24,6 +28,19 @@ const Nav = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleTemplateChange = (event) => {
+    // Call the callback function passed from the parent component
+    setSelectedTemplate(event.target.value);
+    onTemplateChange(event.target.value);
+  };
+
+  const handleLanguageChange = (event) => {
+    
+    setLanguage(event.target.value);
+    onLanguageChange(event.target.value); // Pass selected language to parent component
+  };
+  
 
   return (
     <>
@@ -60,19 +77,25 @@ const Nav = () => {
         >
           <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
             {isVisible ? (
-              <><a
-                href="#"
-                
-                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} px-4 py-2 text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
-              >
-                FR
-              </a><a
-                href="#"
-                
-                className={`${isDropdownOpen ? "text-[#13191D]" : "text-white opacity-60"} px-4 py-2 text-center font-quicksand font-normal text-[18px] leading-[28.8px]`}
-              >
-                  EUR
-                </a><a
+               <>
+      <select
+            value={language}
+            onChange={handleLanguageChange}
+            className="bg-transparent border-none text-red-400 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]"
+          >
+            <option value="fr">French</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+          </select>
+
+              <select onChange={handleTemplateChange} value={selectedTemplate} className="bg-transparent border-none text-red-400 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]">
+                <option value="jardin">Jardin</option>
+                <option value="sirayane">Sirayane</option>
+                <option value="tempX">Temp X</option>
+                <option value="tempY">Temp Y</option>
+                {/* Add more options as needed */}
+              </select>
+      <a
                   href="#"
                   
                   data-modal-target="extralarge-modal"

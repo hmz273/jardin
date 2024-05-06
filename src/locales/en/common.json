@@ -1,0 +1,10 @@
+{
+  "common": {
+    "hello": "Hello",
+    "welcome": "Welcome to my website!"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "Learn more about our company."
+  }
+}

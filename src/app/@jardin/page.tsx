@@ -2,10 +2,11 @@ import React from "react";
 import About from "../compoments/About";
 
 
-const jardin = () => {
+const jardin = ({language}) => {
+  
   return (
     <div>
-      <About />
+      <About language={language}/>
     </div>
   );
 };
