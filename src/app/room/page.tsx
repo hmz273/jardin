@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 import Nav from "../compoments/Nav";
 import Hero from "../compoments/room/Hero";
@@ -38,7 +40,7 @@ const room = () => {
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
   };
-  
+
   return (
     <div>
       <Nav onTemplateChange={handleTemplateChange} onLanguageChange={handleLanguageChange}/>
