@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image";
-import img from "../../../../public/image.png";
+import img from "../../../../../public/image.png";
 
 const Services = () => {
   return (
