@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/logo.png";
+import logo from "../../../../public/logo.png";
 import BookingModel from "../Models/BookingModel";
+import LocaleSwitcher from "./LocaleSwitcher";
+
 import { useRouter } from "next/router";
 
 
@@ -78,7 +80,8 @@ const Nav = ({ onTemplateChange, onLanguageChange  }) => {
           <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
             {isVisible ? (
                <>
-      <select
+               <LocaleSwitcher />
+      {/* <select
             value={language}
             onChange={handleLanguageChange}
             className="bg-transparent border-none text-red-400 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]"
@@ -86,7 +89,7 @@ const Nav = ({ onTemplateChange, onLanguageChange  }) => {
             <option value="fr">French</option>
             <option value="en">English</option>
             <option value="ar">Arabic</option>
-          </select>
+          </select> */}
 
               <select onChange={handleTemplateChange} value={selectedTemplate} className="bg-transparent border-none text-red-400 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]">
                 <option value="jardin">Jardin</option>

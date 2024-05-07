@@ -65,10 +65,10 @@
 }
 
 .ic1 {
-  background:#fff url("../../public/Vector.svg")  97% 50% no-repeat ;
+  background:#fff url("../../../public/Vector.svg")  97% 50% no-repeat ;
 }
 .ic2 {
-  background:#fff url("../../public/Group.svg")  97% 50% no-repeat ;
+  background:#fff url("../../../public/Group.svg")  97% 50% no-repeat ;
 }
 
 [type="date"]::-webkit-calendar-picker-indicator {
@@ -92,5 +92,5 @@
 }
 
 .select .img-bg {
-	background-image: url("../../public/drop.svg");
+	background-image: url("../../../public/drop.svg");
 }

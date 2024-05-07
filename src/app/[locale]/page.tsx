@@ -24,11 +24,30 @@ import jardin from "./@jardin/page";
 import sirayane from "./@sirayane/page";
 import tempX from "./@tempX/page";
 import tempY from "./@tempY/page";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+import TranslationsProvider from "./compoments/TranslationsProvider";
+import initializeTranslations from "../i18n";
+
+const i18nNamespaces = ["common"];
 
 
 
-export default function Home() {
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
+
+  const [t, setT] = useState(null);
+  const [resources, setResources] = useState(null);
+
+  useEffect(() => {
+    const initialize = async () => {
+      const { t: initializedT, resources: initializedResources } = await initializeTranslations(locale, i18nNamespaces);
+      setT(initializedT);      
+      setResources(initializedResources);
+    };
+    initialize();
+  }, [locale]);
+  
+
 
 
   const templates = {
@@ -60,13 +79,24 @@ export default function Home() {
 
   return (
     <>
+    <TranslationsProvider
+      namespaces={i18nNamespaces}
+      locale={locale}
+      resources={resources}
+    >
     <Nav onTemplateChange={handleTemplateChange} onLanguageChange={handleLanguageChange}/>
     <Hero/>
+    <div className="container bg-red-600 mt-64">
+        <div className="mt-5">
+          <h1 className="mb-4 tracking-normal font-normal text-[58px] leading-[63.8px] text-[#13191D]">text</h1>
+        {t && <h1 className="mt-4 tracking-normal font-normal text-[58px] leading-[63.8px] text-[#13191D]">{t("home.Home")}</h1>}
+
+        </div>
+      </div>
     {/* <Jardin language={selectedLanguage}/> */}
 
       {/* Render the selected template component  */}
       {SelectedTemplateComponent && <SelectedTemplateComponent language={selectedLanguage}/>}
-
     <Rooms/>
     <Offers/>
     <Testimonial/>
@@ -79,6 +109,7 @@ export default function Home() {
     <OfferSp/>
     <Footer/>
     {/* <BottomNav/> */}
+    </TranslationsProvider>
     </>
   );
 }

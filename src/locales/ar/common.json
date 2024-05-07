@@ -1,10 +1,14 @@
 {
-  "common": {
-    "hello": "مرحبا",
-    "welcome": "مرحبا بك في موقعي!"
+  "navigation": {
+    "Home": "مسكن",
+    "About": "حول"
+  },
+  "home": {
+    "Home title": "عنوان المنزل",
+    "Home description": "وصف المنزل"
   },
   "about": {
-    "title": "معلومات عنا",
-    "description": "تعرف على المزيد حول شركتنا."
+    "About title": "حول العنوان",
+    "About description": "حول الوصف"
   }
 }

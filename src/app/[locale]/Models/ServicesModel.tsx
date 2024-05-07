@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import img from "../../../public/about.png";
+import img from "../../../../public/about.png";
 
 const ServicesModel = ({ titleModel, idm, descriptionModel, offertModel }) => {
   return (

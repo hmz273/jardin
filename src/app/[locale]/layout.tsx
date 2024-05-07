@@ -3,9 +3,10 @@ import { Quicksand } from "next/font/google";
 import localFont from 'next/font/local'
 import "./globals.css";
 
-import i18nConfig from "../../i18nConfig";
+import i18nConfig from "../../../i18nConfig";
 import { dir } from "i18next";
-const myFont = localFont({ src: "../../public/Branch/Branch.otf"})
+
+const myFont = localFont({ src: "../../../public/Branch/Branch.otf"})
 const quicksand = Quicksand({ subsets: ["latin"] });
 
 
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
 
   return (
-    <html lang="en">
+    <html lang={locale} dir={dir(locale)}>
       <head>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>

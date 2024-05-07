@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import img from "../../../../public/image.png";
+import img from "../../../../../public/image.png";
 
 const RoomCard = ({ id, title, surface, maxPersons }) => {
   return (

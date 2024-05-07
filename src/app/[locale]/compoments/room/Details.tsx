@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { roomDetailsData } from "../../../constants";
+import { roomDetailsData } from "../../../../constants";
 
 const Details = () => {
 

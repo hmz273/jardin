@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Image from "next/image";
-import img from "../../../public/equipment.png";
+import img from "../../../../public/equipment.png";
 
 // const handleScroll = () => {
 //   const wiseLines = document.querySelector('.wise-lines');

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "../../../../public/image1.png";
+import img from "../../../../../public/image1.png";
 
 const OffreCard = ({ id, title, description }) => {
   return (

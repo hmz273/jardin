@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import img from "../../../public/Link.png";
-import img2 from "../../../public/Link2.png";
+import img from "../../../../public/Link.png";
+import img2 from "../../../../public/Link2.png";
 
 const Gallery = () => {
   

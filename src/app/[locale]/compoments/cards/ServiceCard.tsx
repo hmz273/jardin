@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import img from "../../../../public/serv.png";
+import img from "../../../../../public/serv.png";
 
 import ServicesModel from "../../Models/ServicesModel";
 

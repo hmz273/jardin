@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import captcha from "../../../public/captcha.png";
+import captcha from "../../../../public/captcha.png";
 
 const Contact = () => {
   return (

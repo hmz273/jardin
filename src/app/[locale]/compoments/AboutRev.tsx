@@ -5,7 +5,7 @@ import AboutModel from "../Models/AboutModel";
 import Image from "next/image";
 import { about, tradEn, tradFr, tradAr, siteinfo } from "@/constants"
 
-import img from "../../../public/about.png";
+import img from "../../../../public/about.png";
 
 const AboutRev = ({language}) => {
   

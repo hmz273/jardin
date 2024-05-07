@@ -1,11 +1,10 @@
 import React from "react";
 import AboutRev from "../compoments/AboutRev";
 
-
-const sirayane = ({language}) => {
+const sirayane = ({ language }) => {
   return (
     <div>
-      <AboutRev language={language}/>
+      <AboutRev language={language} />
     </div>
   );
 };

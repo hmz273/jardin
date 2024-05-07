@@ -3,11 +3,11 @@
 import React, { useState } from "react";
 import AboutModel from "../Models/AboutModel";
 import Image from "next/image";
-import { about, tradEn, tradFr, tradAr, siteinfo } from "@/constants"
+import { about, siteinfo, tradEn, tradFr, tradAr } from "@/constants"
 
-import img from "../../../public/about.png";
+import img from "../../../../public/about.png";
 
-const AboutX = ({language}) => {
+const AboutY = ({language}) => {
   // Translation data for each language
   const translations = {
     fr: tradFr,
@@ -21,7 +21,6 @@ const AboutX = ({language}) => {
 
   const etabTypeLabel = aboutDetails.etabTypeLabel[siteinfo.etabType];
 
-
   return (
     <><section className="md:mt-28 md:mx-auto md:w-[1075px] md:h-[564px] md:top-[1063px] md:left-[183px]">
 
@@ -29,7 +28,7 @@ const AboutX = ({language}) => {
 
     <div className="mr-auto place-self-center md:w-[524px] md:h-[445px] md:gap-[50px] lg:col-span-7">
       <h3 className="md:text-lef font-normal md:text-[34px] md:leading-[37.4px] text-[42px] leading-[46.2px] tracking-normal text-gray-800">
-        {aboutDetails.title} <span className="text-red-600 font-bold uppercase">tempX</span>
+        {aboutDetails.title} <span className="text-red-600 font-bold uppercase">tempY</span>
       </h3>
       <h3 className="md:text-left uppercase py-12 font-quicksand font-normal text-[24px] leading-[26.4px] tracking-normal text-gray-800">
         {etabTypeLabel} {aboutDetails.souTitle}
@@ -52,4 +51,4 @@ const AboutX = ({language}) => {
   );
 };
 
-export default AboutX;
+export default AboutY;

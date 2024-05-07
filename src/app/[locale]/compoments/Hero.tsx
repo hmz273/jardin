@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import img from "../../../public/about.png";
+import img from "../../../../public/about.png";
 import DateRange from "./DateRange";
 
 const Hero = () => {
