@@ -29,6 +29,9 @@ const getCurrentDate = () => {
     return new Date().toISOString().split("T")[0];
   };
 
+  
+  
+
   return (
     <section className=" text-gray-900">
       <div
@@ -85,7 +88,12 @@ const getCurrentDate = () => {
           data-carousel-prev
         >
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full">
+            
+            {/* {currentPathname === 'ar' ? (<h1>text</h1>) : ( <h1> tst </h1> )} */}
+
+
             <svg
+            className="rtl:rotate-180"
               width="45"
               height="31"
               viewBox="0 0 45 31"
@@ -140,6 +148,7 @@ const getCurrentDate = () => {
         >
           <span className="inline-flex items-center justify-center w-10 h-10 rounded-full group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
             <svg
+            className="rtl:rotate-180"
               width="45"
               height="31"
               viewBox="0 0 45 31"
@@ -367,7 +376,7 @@ const getCurrentDate = () => {
             >
               Réservez
               <svg
-                className="ml-2"
+                className="ltr:ml-2 rtl:mr-2 rtl:rotate-180"
                 width="16"
                 height="12"
                 viewBox="0 0 16 12"
