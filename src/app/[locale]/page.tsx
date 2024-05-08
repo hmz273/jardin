@@ -35,7 +35,7 @@ const i18nNamespaces = ["common"];
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
 
-  const [t, setT] = useState(null);
+  const [t, setT] = useState(null); 
   const [resources, setResources] = useState(null);
 
   useEffect(() => {
@@ -70,11 +70,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
   // Retrieve the component for the selected template
   const SelectedTemplateComponent = templates[selectedTemplate];
 
-  const [selectedLanguage, setSelectedLanguage] = useState('fr');
-
-  const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
-  };
 
 
   return (
@@ -84,19 +79,10 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       locale={locale}
       resources={resources}
     >
-    <Nav onTemplateChange={handleTemplateChange} onLanguageChange={handleLanguageChange}/>
+    <Nav onTemplateChange={handleTemplateChange}/>
     <Hero/>
-    <div className="container bg-red-600 mt-64">
-        <div className="mt-5">
-          <h1 className="mb-4 tracking-normal font-normal text-[58px] leading-[63.8px] text-[#13191D]">text</h1>
-        {t && <h1 className="mt-4 tracking-normal font-normal text-[58px] leading-[63.8px] text-[#13191D]">{t("home.Home")}</h1>}
-
-        </div>
-      </div>
-    {/* <Jardin language={selectedLanguage}/> */}
-
       {/* Render the selected template component  */}
-      {SelectedTemplateComponent && <SelectedTemplateComponent language={selectedLanguage}/>}
+      {SelectedTemplateComponent && <SelectedTemplateComponent  />}
     <Rooms/>
     <Offers/>
     <Testimonial/>

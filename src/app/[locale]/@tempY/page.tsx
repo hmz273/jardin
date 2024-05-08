@@ -2,10 +2,10 @@ import React from "react";
 import AboutY from "../compoments/AboutY";
 
 
-const tempY = ({language}) => {
+const tempY = () => {
   return (
     <div>
-      <AboutY language={language}/>
+      <AboutY />
     </div>
   );
 };

@@ -7,19 +7,12 @@ import { about, tradEn, tradFr, tradAr, siteinfo } from "@/constants"
 
 import img from "../../../../public/about.png";
 
-const AboutX = ({language}) => {
-  // Translation data for each language
-  const translations = {
-    fr: tradFr,
-    en: tradEn,
-    ar: tradAr,
-    // Add translations for other languages here
-  };  
+import { useTranslation } from "react-i18next";
 
-  const aboutDetails = translations[language];
-  
 
-  const etabTypeLabel = aboutDetails.etabTypeLabel[siteinfo.etabType];
+const AboutX = () => {
+
+  const { t } = useTranslation("common");
 
 
   return (
@@ -28,14 +21,14 @@ const AboutX = ({language}) => {
       <div className="grid max-w-screen-xl md:w-[70rem] py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
 
     <div className="mr-auto place-self-center md:w-[524px] md:h-[445px] md:gap-[50px] lg:col-span-7">
-      <h3 className="md:text-lef font-normal md:text-[34px] md:leading-[37.4px] text-[42px] leading-[46.2px] tracking-normal text-gray-800">
-        {aboutDetails.title} <span className="text-red-600 font-bold uppercase">tempX</span>
+    <h3 className="md:text-lef font-normal md:text-[34px] md:leading-[37.4px] text-[42px] leading-[46.2px] tracking-normal text-gray-800">
+      {t("about.title")}
       </h3>
       <h3 className="md:text-left uppercase py-12 font-quicksand font-normal text-[24px] leading-[26.4px] tracking-normal text-gray-800">
-        {etabTypeLabel} {aboutDetails.souTitle}
+      {t("about.souTitle")}
       </h3>
       <p className="md:text-left mb-6 font-quicksand font-normal line-clamp-[7] text-[18px] leading-[28.8px] text-gray-500 lg:mb-8 dark:text-gray-400">
-        {aboutDetails.description}
+      {t("about.description")}
       </p>
       <a href="#" data-modal-target="about-modal" data-modal-toggle="about-modal" className="hidden text-left tracking-tight uppercase md:inline-flex mr-3 font-quicksand font-normal text-[18px] leading-[19.8px] text-[#AD936D]">
         En savoir plus

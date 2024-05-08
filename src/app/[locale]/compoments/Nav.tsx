@@ -9,11 +9,10 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import { useRouter } from "next/router";
 
 
-const Nav = ({ onTemplateChange, onLanguageChange  }) => {
+const Nav = ({ onTemplateChange  }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedTemplate, setSelectedTemplate] = useState('jardin');
-  const [language, setLanguage] = useState('fr'); // Default language is French
 
 
   const toggleDropdown = () => {
@@ -37,11 +36,6 @@ const Nav = ({ onTemplateChange, onLanguageChange  }) => {
     onTemplateChange(event.target.value);
   };
 
-  const handleLanguageChange = (event) => {
-    
-    setLanguage(event.target.value);
-    onLanguageChange(event.target.value); // Pass selected language to parent component
-  };
   
 
   return (
