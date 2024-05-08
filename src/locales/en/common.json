@@ -3,14 +3,16 @@
     "Home": "Home",
     "About": "About"
   },
-  "home": {
-    "Home": "Home title",
-    "Home description": "Home description"
+  "hero": {
+    "title": "THE GARDENS OF ZYRIAB RESORT & SPA",
+    "promotion": "PROMOTION UP TO 30%",
+    "button": "BOOK"
   },
   "about": {
     "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
     "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech"
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
   
   }
 }

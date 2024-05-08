@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import img from "../../../../public/about.png";
 import DateRange from "./DateRange";
+import { useTranslation } from "react-i18next";
+
 
 const Hero = () => {
   const getTomorrowDate = () => {
@@ -30,7 +32,7 @@ const getCurrentDate = () => {
   };
 
   
-  
+  const { t } = useTranslation("common");
 
   return (
     <section className=" text-gray-900">
@@ -363,10 +365,10 @@ const getCurrentDate = () => {
             className="uppercase font-normal tracking-tighter font-quicksand text-[22px] leading-[24.2px] text-white opacity-75 px-16 py-[22px]"
             
           >
-            Les Jardins De Zyriab Resort & Spa
+            {t("hero.title")}
           </p>
           <h1 className="uppercase mb-[24px] tracking-normal font-normal text-[58px] leading-[63.8px] text-white">
-            Promotion Jusqu’à 30%
+          {t("hero.promotion")}
           </h1>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a
@@ -374,7 +376,7 @@ const getCurrentDate = () => {
               
               className="inline-flex justify-center font-quicksand items-center text-center text-white border border-gray-300 focus:outline-none focus:ring-4 focus:ring-gray-100 font-semibold text-[20px] leading-[20px] px-10 py-3 uppercase mb-2"
             >
-              Réservez
+              {t("hero.button")}
               <svg
                 className="ltr:ml-2 rtl:mr-2 rtl:rotate-180"
                 width="16"

@@ -30,7 +30,7 @@ const About = () => {
       {t("about.description")}
       </p>
       <a href="#" data-modal-target="about-modal" data-modal-toggle="about-modal" className="hidden text-left tracking-tight uppercase md:inline-flex mr-3 font-quicksand font-normal text-[18px] leading-[19.8px] text-[#AD936D]">
-        En savoir plus
+        {t("about.button")}
       </a>
     </div>
 
