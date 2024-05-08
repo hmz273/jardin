@@ -1,9 +1,6 @@
 "use client"
 
-import NavBar from "./compoments/NavBar";
 import Hero from "./compoments/Hero";
-import About from "./compoments/About";
-import AboutRev from "./compoments/AboutRev";
 import Rooms from "./compoments/Rooms";
 import Offers from "./compoments/Offers";
 import Testimonial from "./compoments/Testimonial";
@@ -15,12 +12,8 @@ import Booking from "./compoments/Booking";
 import Contact from "./compoments/Contact";
 import OfferSp from "./compoments/OfferSp";
 import Footer from "./compoments/Footer";
-import BottomNav from "./compoments/BottomNav";
 import Nav from "./compoments/Nav";
-import Loading from "./compoments/Loading";
-import Carou from "./compoments/carou";
 
-import { siteinfo, tradAr, tradEn, tradFr } from "@/constants"
 import jardin from "./@jardin/page";
 import sirayane from "./@sirayane/page";
 import tempX from "./@tempX/page";
@@ -94,7 +87,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       resources={resources}
     >
     <Nav onTemplateChange={handleTemplateChange}/>
-    {/* <Carou/> */}
     <Hero/>
       {/* Render the selected template component  */}
       {SelectedTemplateComponent && <SelectedTemplateComponent  />}

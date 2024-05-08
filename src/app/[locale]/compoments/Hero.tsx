@@ -38,7 +38,7 @@ const getCurrentDate = () => {
       >
         <div className="relative h-svh w-auto md:h-[880px] overflow-hidden md:brightness-50">
           {/* <!-- Item 1 --> */}
-          <div className="hidden duration-700 ease-in-out " data-carousel-item>
+          <div className="duration-700 ease-in-out " data-carousel-item>
             <Image
               src={img}
               className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 h-[60rem]"

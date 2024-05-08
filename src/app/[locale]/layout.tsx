@@ -23,6 +23,7 @@
     params: { locale: string };
 
   }>) {
+    
 
     return (
       <html lang={locale} dir={dir(locale)}>
