@@ -43,7 +43,7 @@ const room = () => {
 
   return (
     <div>
-      <Nav onTemplateChange={handleTemplateChange} onLanguageChange={handleLanguageChange}/>
+      <Nav onTemplateChange={handleTemplateChange}/>
       <Hero />
       <Details />
       <Gallery />

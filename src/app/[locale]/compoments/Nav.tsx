@@ -9,7 +9,7 @@ import LocaleSwitcher from "./LocaleSwitcher";
 import { useRouter } from "next/router";
 
 
-const Nav = ({ onTemplateChange  }) => {
+const Nav = ({ onTemplateChange }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [selectedTemplate, setSelectedTemplate] = useState('jardin');
