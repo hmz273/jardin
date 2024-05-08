@@ -21,7 +21,7 @@ const AboutY = () => {
 
     <div className="mr-auto place-self-center md:w-[524px] md:h-[445px] md:gap-[50px] lg:col-span-7">
     <h3 className="md:text-lef font-normal md:text-[34px] md:leading-[37.4px] text-[42px] leading-[46.2px] tracking-normal text-gray-800">
-      {t("about.title")}
+      {t("about.title")}<span className="text-red-700">|| tempY</span>
       </h3>
       <h3 className="md:text-left uppercase py-12 font-quicksand font-normal text-[24px] leading-[26.4px] tracking-normal text-gray-800">
       {t("about.souTitle")}

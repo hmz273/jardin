@@ -36,7 +36,7 @@ export default function LocaleSwitcher() {
       );
     }
 
-    router.refresh();
+    // router.refresh();
   };
 
   return (
