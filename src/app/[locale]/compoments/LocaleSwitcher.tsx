@@ -28,7 +28,7 @@ export default function LocaleSwitcher() {
       !i18nConfig.prefixDefault
     ) {
 
-      router.push("/" + newLocale);
+      router.push("/" + newLocale); 
               
     } else {
       router.push(
@@ -36,7 +36,12 @@ export default function LocaleSwitcher() {
       );
     }
 
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
     // router.refresh();
+    // window.location.reload();
+    // router.reload();
   };
 
   return (
