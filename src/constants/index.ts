@@ -18,19 +18,19 @@ export const about: aboutDetails = {
 export const roomsData: Room[] = [
   {
     id: "1",
-    title: "Room Details",
+    title: "Room ",
     surface: 3,
     maxPersons: 2,
   },
   {
     id: "2",
-    title: "Room Details",
+    title: "Room ",
     surface: 3,
     maxPersons: 3,
   },
   {
     id: "10",
-    title: "Room Details",
+    title: "Room ",
     surface: 3,
     maxPersons: 4,
     // other properties

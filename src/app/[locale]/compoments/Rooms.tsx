@@ -3,14 +3,20 @@ import React from "react";
 import RoomCard from "./cards/RoomCard";
 
 import { roomsData } from "@/constants";
+import { useTranslation } from "react-i18next";
+
 
 const Rooms = () => {
+
+  const { t } = useTranslation("common");
+
+
   return (
     <section className="md:mt-[249px] md:h-[998px] md:top-[1782px] md:left[0.5px]">
       <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 tracking-normal font-normal text-[58px] leading-[63.8px] text-[#13191D]">
-            Chambres Et Suites
+            {t("room.title")}
           </h2>
         </div>
 

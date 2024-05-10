@@ -3,7 +3,37 @@ import Image from "next/image";
 import Link from "next/link";
 import img from "../../../../../public/image.png";
 
+import { useTranslation } from "react-i18next";
+
+
 const RoomCard = ({ id, title, surface, maxPersons }) => {
+
+
+  const { t } = useTranslation("common");
+
+
+  // Get the translation data for rooms
+  // const roomDataString = t("room");
+  // // console.log(typeof );
+  
+  
+  // // Parse the translation data as JSON
+  // let roomData: { id: number; title: string; name: string; guests: string; surface: string; button: string }[] = [];
+
+  // try {
+  //   roomData = JSON.parse(roomDataString);
+
+  // } catch (error) {
+  //   console.error("Error parsing room data:", error);
+  // }
+
+  // Find the room data for the current room ID
+  // const currentRoom = roomDataString.find(room => room.id === id);
+
+  
+
+
+
   return (
     <div className="inline-block px-3 md:w-[856px] w-[18rem]">
       <div className="h-auto overflow-hidden duration-300 ease-in-out">
@@ -15,12 +45,12 @@ const RoomCard = ({ id, title, surface, maxPersons }) => {
           />
           <div className="p-5">
             <h5 className="mb-2 font-normal text-[42px] leading-[46.2px] tracking-tight text-[#13191D]">
-              {title}
+              {/* {title} || {id} || {currentRoom && currentRoom} */}
             </h5>
             <div className="md:flex space-x-5 text-center mx-auto gap-[60px] max-w-md pl-16 md:py-6 py-2 md:mb-6">
               <p className="mb-3 font-normal text-[18px] font-quicksand leading-[28.8px] text-[#13191D]">
                 Surface : {surface}
-              </p>
+              </p> 
               <p className="mb-3 font-normal text-[18px] font-quicksand leading-[28.8px] text-[#13191D]">
                 Personnes Max : {maxPersons}
               </p>

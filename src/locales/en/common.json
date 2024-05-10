@@ -1,7 +1,8 @@
 {
   "navigation": {
-    "Home": "Home",
-    "About": "About"
+    "home": "Home",
+    "about": "About",
+    "button": "Reserve now"
   },
   "hero": {
     "title": "THE GARDENS OF ZYRIAB RESORT & SPA",
@@ -13,6 +14,89 @@
     "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
     "souTitle": "in Marrakech",
     "button": "LEARN MORE"
-  
+  },
+  "room": {
+    "title": "Rooms and Suites",
+    "button": "DISCOVER",
+    "rooms": [
+      {
+        "id": 1,
+        "title": "Rooms and Suites",
+        "name": "Room Details",
+        "guests": "guests",
+        "surface": "surface",
+        "button": "DISCOVER"
+      },
+      {
+        "id": 2,
+        "title": "Rooms and Suites",
+        "name": "Room Details",
+        "guests": "guests",
+        "surface": "surface",
+        "button": "DISCOVER"
+      },
+      {
+        "id": 3,
+        "title": "Rooms and Suites",
+        "name": "Room Details",
+        "guests": "guests",
+        "surface": "surface",
+        "button": "DISCOVER"
+      }
+    ]
+  },
+  "offer": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "testi": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "service": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "equip": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "etab": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "book": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "contact": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "offerS": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
+  },
+  "footer": {
+    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
+    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
+    "souTitle": "in Marrakech",
+    "button": "LEARN MORE"
   }
 }

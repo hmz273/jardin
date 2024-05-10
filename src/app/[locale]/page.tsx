@@ -32,7 +32,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
 
   const [t, setT] = useState(null); 
   const [resources, setResources] = useState(null);
-  const [loading, setLoading] = useState(true); // Introduce loading state
+  // const [loading, setLoading] = useState(true); // Introduce loading state
 
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       const { t: initializedT, resources: initializedResources } = await initializeTranslations(locale, i18nNamespaces);
       setT(initializedT);      
       setResources(initializedResources);
-      setLoading(false); // Set loading to false after resources are loaded
+      // setLoading(false); // Set loading to false after resources are loaded
 
     };
     initialize();

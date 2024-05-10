@@ -3,15 +3,18 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import i18nConfig from "../../../../i18nConfig";
-import { ChangeEvent } from "react";
+import { ChangeEvent, useState } from "react";
 
 export default function LocaleSwitcher() {
+  const [loading, setLoading] = useState(true); // Introduce loading state
+
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
   const router = useRouter();
   const currentPathname = usePathname();
 
   const handleChangeLocale = (e: ChangeEvent<HTMLSelectElement>) => {
+    setLoading(true); // Set loading to true when changing locale
     const newLocale = e.target.value;
     
 
@@ -37,6 +40,7 @@ export default function LocaleSwitcher() {
     }
 
     setTimeout(() => {
+      setLoading(false); // Set loading to false after 2 seconds
       window.location.reload();
     }, 2000);
     // router.refresh();
@@ -45,9 +49,10 @@ export default function LocaleSwitcher() {
   };
 
   return (
-    <select className="bg-transparent border-none text-red-400 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]" onChange={handleChangeLocale} value={currentLocale}>
-      <option value="en">English</option>
-      <option value="ar">Arabic</option>
+    
+    <select className="bg-transparent border-none text-gray-50 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]" onChange={handleChangeLocale} value={currentLocale} >
+      <option value="en" className="text-black">En</option>
+      <option value="ar" className="text-black">Ar</option>
     </select>
   );
 }

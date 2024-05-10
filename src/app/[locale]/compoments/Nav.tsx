@@ -71,7 +71,7 @@ const Nav = ({ onTemplateChange }) => {
             isDropdownOpen ? "bg-white h-dvh md:w-[46rem]" : ""
           } pt-4 pr-7`}
         >
-          <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-12 rtl:space-x-reverse md:flex-row md:mt-4">
+          <div className="md:flex hidden mx-auto text-center md:pr-14 justify-end  mt-4 md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-4">
             {isVisible ? (
                <>
                <LocaleSwitcher />
@@ -85,21 +85,20 @@ const Nav = ({ onTemplateChange }) => {
             <option value="ar">Arabic</option>
           </select> */}
 
-              <select onChange={handleTemplateChange} value={selectedTemplate} className="bg-transparent border-none text-red-400 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]">
-                <option value="jardin">Jardin</option>
-                <option value="sirayane">Sirayane</option>
-                <option value="tempX">Temp X</option>
-                <option value="tempY">Temp Y</option>
+              <select onChange={handleTemplateChange} value={selectedTemplate} className="bg-transparent border-none text-gray-50 font-extrabold text-center font-quicksand text-[18px] leading-[28.8px]">
+                <option className="text-black" value="jardin">Jardin</option>
+                <option className="text-black" value="sirayane">Sirayane</option>
+                <option className="text-black" value="tempX">Temp X</option>
+                <option className="text-black" value="tempY">Temp Y</option>
                 {/* Add more options as needed */}
               </select>
-      <a
+                <a
                   href="#"
-                  
                   data-modal-target="extralarge-modal"
                   data-modal-toggle="extralarge-modal"
                   className={`${isDropdownOpen
                       ? "hover:bg-orange-800 hover:text-gray-50"
-                      : "text-gray-50"} border border-transparent hover:border-gray-300 font-quicksand px-4 py-4 font-semibold md:text-[22px] md:leading-[20px] text-center `}
+                      : "text-gray-50"} md:ml-0 ml-0 border border-transparent hover:border-gray-300 font-quicksand px-4 py-4 font-semibold md:text-[22px] md:leading-[20px] text-center`}
                 >
                   Réservez maintenant
                 </a>
