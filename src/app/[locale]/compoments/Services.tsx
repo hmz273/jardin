@@ -2,14 +2,20 @@ import React from "react";
 import ServiceCard from "./cards/ServiceCard";
 import { serviceData } from "@/constants";
 
+import { useTranslation } from "react-i18next";
+
+
 const Services = () => {
+
+  const { t } = useTranslation("common");
+
   return (
     <>
       <section className="md:mt-[92px]">
         <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
           <div className="mx-auto md:mb-[41px] max-w-screen-sm">
             <h2 className="mb-4 tracking-normal capitalize font-normal text-[58px] leading-[63.8px]">
-              Nos services
+            {t("service.title")}
             </h2>
           </div>
 
@@ -20,6 +26,7 @@ const Services = () => {
                   <ServiceCard
                     key={service.id}
                     id={service.id}
+                    img={service.img}
                     title={service.title}
                     description={service.description}
                     offert={service.offert}

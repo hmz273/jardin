@@ -27,6 +27,7 @@ const Rooms = () => {
               <RoomCard
                 key={room.id}
                 id={room.id}
+                img={room.img}
                 title={room.title}
                 surface={room.surface}
                 maxPersons={room.maxPersons}

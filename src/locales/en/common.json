@@ -17,82 +17,233 @@
   },
   "room": {
     "title": "Rooms and Suites",
+    "surface": "Surface",
+    "guests": "Guests",
     "button": "DISCOVER",
-    "rooms": [
-      {
-        "id": 1,
-        "title": "Rooms and Suites",
-        "name": "Room Details",
-        "guests": "guests",
-        "surface": "surface",
-        "button": "DISCOVER"
-      },
-      {
-        "id": 2,
-        "title": "Rooms and Suites",
-        "name": "Room Details",
-        "guests": "guests",
-        "surface": "surface",
-        "button": "DISCOVER"
-      },
-      {
-        "id": 3,
-        "title": "Rooms and Suites",
-        "name": "Room Details",
-        "guests": "guests",
-        "surface": "surface",
-        "button": "DISCOVER"
-      }
-    ]
-  },
-  "offer": {
-    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
-    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech",
-    "button": "LEARN MORE"
-  },
-  "testi": {
-    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
-    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech",
-    "button": "LEARN MORE"
+    "rooms": {
+      "260555-title": "Privilege Room with Private Terrace",
+      "260556-title": "Privilege Room with Private Terrace",
+      "260557-title": "Privilege Room with Private Terrace"
+    }
   },
   "service": {
-    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
-    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech",
-    "button": "LEARN MORE"
+    "title": "Our Services",
+    "button": "LEARN MORE",
+    "services": {
+      "260555-title": "Réserver 1 nuits",
+      "260556-title": "Réserver 2 nuits",
+      "260557-title": "Réserver 3 nuits",
+      "260558-title": "Réserver 1 nuits",
+      "260559-title": "Réserver 2 nuits",
+      "260554-title": "Réserver 3 nuits",
+      "260555-description": "The Sirayane Spa The Sirayane Spa welcomes you in a magnificent The Sirayane Spa welcomes you in a magnificent welcomes you in a magnificent",
+      "260556-description": "The Sirayane Spa The Sirayane Spa welcomes you in a magnificent The Sirayane Spa welcomes you in a magnificent welcomes",
+      "260557-description": "The Sirayane Spa The Sirayane Spa welcomes you in a magnificent The Sirayane Spa welcomes you in a magnificent",
+      "260558-description": "The Sirayane Spa The Sirayane Spa welcomes you in a magnificent The Sirayane Spa welcomes you in a magnificent welcomes you in a magnificent",
+      "260559-description": "The Sirayane Spa The Sirayane Spa welcomes you in a magnificent The Sirayane Spa welcomes you in a magnificent welcomes",
+      "260554-description": "The Sirayane Spa The Sirayane Spa welcomes you in a magnificent The Sirayane Spa welcomes you in a magnificent"
+    }
   },
-  "equip": {
-    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
-    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech",
-    "button": "LEARN MORE"
+
+  "facilities": {
+    "51043-title": "Outdoor furniture",
+    "51044-title": "Sun terrace",
+    "51045-title": "Terrace",
+    "51046-title": "Garden",
+    "51047-title": "Pets are not allowed.",
+    "51048-title": "Cooking class Additional charge",
+    "51049-title": "Tennis equipment",
+    "51050-title": "Library",
+    "51051-title": "Billiards Additional charge",
+    "51052-title": "Games room",
+    "51053-title": "Golf course (within 3 km) Additional charge",
+    "51054-title": "On-site coffee house",
+    "51055-title": "Fruits Additional charge",
+    "51056-title": "Bottle of water Additional charge",
+    "51057-title": "Wine/champagne Additional charge",
+    "51058-title": "Kid meals",
+    "51059-title": "Special diet menus (on request)",
+    "51060-title": "Breakfast in the room",
+    "51061-title": "Bar",
+    "51062-title": "Restaurant",
+    "51063-title": "Free! WiFi is available in all areas and is free of charge.",
+    "51064-title": "Accessible parking",
+    "51065-title": "Parking garage",
+    "51066-title": "Secured parking",
+    "51067-title": "Airport drop off Additional charge",
+    "51068-title": "Airport pick up Additional charge",
+    "51069-title": "Concierge service",
+    "51070-title": "Luggage storage",
+    "51071-title": "Tour desk",
+    "51072-title": "Express check-in/check-out",
+    "51073-title": "24-hour front desk",
+    "51074-title": "Babysitting/child services Additional charge",
+    "51075-title": "Daily housekeeping",
+    "51076-title": "Shoeshine",
+    "51077-title": "Ironing service Additional charge",
+    "51078-title": "Dry cleaning Additional charge",
+    "51079-title": "Laundry Additional charge",
+    "51080-title": "Fax/photocopying",
+    "51081-title": "Business centre",
+    "51082-title": "Meeting/banquet facilities Additional charge",
+    "51083-title": "Fire extinguishers",
+    "51084-title": "CCTV outside property",
+    "51085-title": "CCTV in common areas",
+    "51086-title": "Smoke alarms",
+    "51087-title": "24-hour security",
+    "51088-title": "Safety deposit box",
+    "51089-title": "Shuttle service",
+    "51090-title": "Shared lounge/TV area",
+    "51091-title": "Airport shuttle (additional charge)",
+    "51092-title": "Shuttle service (additional charge)",
+    "51093-title": "Shuttle service (free)",
+    "51094-title": "Designated smoking area",
+    "51095-title": "Air conditioning",
+    "51096-title": "Allergy-free room",
+    "51097-title": "Heating",
+    "51098-title": "Car hire",
+    "51099-title": "Soundproof rooms",
+    "51100-title": "Bridal suite",
+    "51101-title": "VIP room facilities",
+    "51102-title": "Barber/beauty shop",
+    "51103-title": "Facilities for disabled guests",
+    "51104-title": "Non-smoking rooms",
+    "51105-title": "Room service",
+    "51106-title": "Arabic",
+    "51107-title": "English",
+    "51108-title": "French",
+    "51109-title": "Fitness",
+    "51110-title": "Massage chair",
+    "51111-title": "Full body massage Additional charge",
+    "51112-title": "Hand massage Additional charge",
+    "51113-title": "Head massage Additional charge",
+    "51114-title": "Foot massage Additional charge",
+    "51115-title": "Neck massage Additional charge",
+    "51116-title": "Back massage Additional charge",
+    "51117-title": "Spa/wellness packages",
+    "51118-title": "Spa lounge/relaxation area",
+    "51119-title": "Steam room",
+    "51120-title": "Spa Facilities",
+    "51121-title": "Body wrap",
+    "51122-title": "Body scrub",
+    "51123-title": "Body Treatments",
+    "51124-title": "Hair styling",
+    "51125-title": "Hair colouring",
+    "51126-title": "Hair cut",
+    "51127-title": "Pedicure",
+    "51128-title": "Manicure",
+    "51129-title": "Hair treatments",
+    "51130-title": "Make up services",
+    "51131-title": "Waxing services",
+    "51132-title": "Facial treatments",
+    "51133-title": "Beauty Services",
+    "51134-title": "Sun umbrellas",
+    "51135-title": "Sun loungers or beach chairs",
+    "51136-title": "Pool/beach towels",
+    "51137-title": "Hammam Additional charge",
+    "51138-title": "Massage Additional charge",
+    "51139-title": "Spa and wellness centre Additional charge",
+    "51140-title": "Fitness centre"
   },
-  "etab": {
-    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
-    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech",
-    "button": "LEARN MORE"
+  "facilitiesType": {
+    "10955-title": "Outdoors",
+    "10956-title": "Pets",
+    "10957-title": "Activities",
+    "10958-title": "Food & Drink",
+    "10959-title": "Internet",
+    "10960-title": "Parking",
+    "10961-title": "Transport",
+    "10962-title": "Reception services",
+    "10963-title": "Entertainment and family services",
+    "10964-title": "Cleaning services",
+    "10965-title": "Business facilities",
+    "10966-title": "Safety & security",
+    "10967-title": "General",
+    "10968-title": "Languages spoken",
+    "10969-title": "Wellness"
   },
+
+
+
+  "commentTypes": {
+    "1": "Commentaire-De-TripAdvisor",
+    "2": "Certificats-Dexcellence", 
+    "3": "Commentaire-De-Booking"
+  },
+  "comments": {
+    "title": "Customer Reviews",
+    "button": "LEARN MORE",
+    "3133543": {
+      "name": "Caroline D",
+      "score": 3,
+      "title": "TripAdvisor",
+      "text": "Wonderful hotel with excellent staff. The food was delicious and the games room was a bonus for entertaining the teenagers. We were made to feel extremely welcome and the free shuttle made getting around very easy"
+    },
+    "3133545": {
+      "name": "Caroline D",
+      "score": 3,
+      "title": "TripAdvisor",
+      "text": "Wonderful hotel with excellent staff. The food was delicious and the games room was a bonus for entertaining the teenagers. We were made to feel extremely welcome and the free shuttle made getting around very easy"
+    },
+    "3133546": {
+      "name": "Caroline D",
+      "score": 3,
+      "title": "TripAdvisor",
+      "text": "Wonderful hotel with excellent staff. The food was delicious and the games room was a bonus for entertaining the teenagers. We were made to feel extremely welcome and the free shuttle made getting around very easy"
+    },
+    "3133544": {
+      "name": "Sana slaoui",
+      "score": 4,
+      "title": "TripAdvisor",
+      "text": "We had an amazing stay. The hotel and the room are stylish and very clean. The staff very polite and professional. The breakfast was varied with the traditional recipes, I loved the Moroccan tea, it's an addiction . We also had a spa day with a very professional spa therapist. Thanks to karima who make me feel like a princess. We had a lovely dinner with a romantic set up for the valentine's . We will definitely coming back. Thanks a lot "
+    },
+    "4704636": {
+      "name": "Khalid",
+      "score": 7,
+      "title": "Booking",
+      "text": "Not really what we would consider a 5 star by UK, US and Caribbean standards. They do try to be helpful and are polite, although NO all inclusive here, and the best you can expect is Half Board, rubbish really. The half board is breakfast and evening meal only and NO drinks. You can't swap lunch for evening meal you just get charged, we did. So if your out or don't fancy the same menu again it's tough. The menu is very limited especially for a 5 star which makes meal times boring, same little uninteresting eating area and small menu every day is quite tedious. The rooms we had a premium room with pool is worn and tired with lots of little bits of general maintenance required and the same goes for the hotel and the spa (staff in spa texting whilst giving massages, not great!) However the staff are polite and try to be helpful the shuttle service is OK but limited by the set times you can use it. We wouldn't go here again better hotels are in Marrakech just not available via Tui who are rubbish"
+    },
+    "4704637": {
+      "name": "John",
+      "score": 8,
+      "title": "Booking",
+      "text": "Every part of our holiday experience was fantastic. A fresh breakfast every morning with plenty of choice. Three lovely pools one heated with lots of sun beds and room to enjoy the winter sun.<br><br>Top staff who can not do enough for you. The free shuttle is a great way of travelling in and out of the city.<br><br>Highly recommended we will be going back."
+    }
+  },
+
+
   "book": {
     "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
     "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
     "souTitle": "in Marrakech",
     "button": "LEARN MORE"
   },
+  
   "contact": {
-    "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
-    "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
-    "souTitle": "in Marrakech",
-    "button": "LEARN MORE"
+    "11242-adress": "Kilomètre 8 route d'Amezmiz, 40000 Marrakech, Morocco",
+    "11242-description": "Sirayane Boutique Hotel & Spa Marrakech",
+    "11242-keyword": "Sirayane Boutique Hotel & Spa Marrakech",
+    "11242-title": "Sirayane Boutique Hotel & Spa Marrakech",
+    "Longitude": "Longitude",
+    "Latitude": "Latitude",
+    "map":"VIEW OUR ESTABLISHMENT ON THE MAP",
+    "name": "Your Name",
+    "email": "Your Email",
+    "phone": "Your Phone",
+    "subject": "Subject of the message",
+    "message": "Write your message here",
+    "captcha": "Enter the captcha code",
+    "button": "SEND"
+
   },
+
   "offerS": {
     "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
     "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",
     "souTitle": "in Marrakech",
     "button": "LEARN MORE"
   },
+
   "footer": {
     "title": "Sirayane Boutique Hotel & Spa Marrakech EN",
     "description": "Located at approximately 15 minutes from Mohamed VI Avenue, the medina, and trendy places in the Red City, Surrounded by 9 golf courses",

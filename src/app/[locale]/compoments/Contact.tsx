@@ -1,24 +1,30 @@
 import React from "react";
 import Image from "next/image";
 import captcha from "../../../../public/captcha.png";
+import { useTranslation } from "react-i18next";
+import { contact } from "@/constants";
 
 const Contact = () => {
+
+  const { t } = useTranslation("common");
+
+
   return (
     <section className="bg-white">
       <div className="grid md:w-[1073px] md:top-[9290.87px] md:left-[184px] max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto md:w-[445px] place-self-center lg:col-span-6">
           <h1 className="max-w-2xl capitalize mb-4 font-normal text-[42px] leading-[46.2px] tracking-wide text-[#3D505A]">
-            Demander avant de réserver
+          {t(`contact.${contact.etablissementId}-title`)}
           </h1>
 
           <h1 className="py-4 w-[21rem] capitalize mb-4 font-normal text-[28px] leading-[30.8px] tracking-normal text-[#3D505A]">
-            Les Jardins De Zyriab Resort & Spa
+          {t(`contact.${contact.etablissementId}-description`)}
           </h1>
           <p
             
             className="max-w-2xl mb-6 text-gray-500 lg:mb-8 font-quicksand font-normal text-[18px] leading-[28.8px] dark:text-gray-400"
           >
-            Km 13 Route De L’Ourika – Canal De Zaraba, 40000 Aït Hamid, Maroc
+            {t(`contact.${contact.etablissementId}-adress`)}
           </p>
           <div className="py-4 flex space-x-5">
             <a
@@ -62,20 +68,19 @@ const Contact = () => {
           </div>
           <div className="py-4 opacity-60 text-[#3C3A34] font-quicksand font-normal text-[18px] leading-[28.8px]">
             <span>
-              Longitude : -8.00317526
+            {t(`contact.Longitude`)} : -8.00317526
             </span>
           </div>
           <div className=" opacity-60 text-[#3C3A34] font-quicksand font-normal text-[18px] leading-[28.8px] mb-4">
             <span>
-              {" "}
-              Latitude : 31.62674178
+              {t(`contact.Latitude`)} : 31.62674178
             </span>
           </div>
           <p
             
             className="text-gray-500 uppercase pt-4 font-normal font-quicksand text-[18px] leading-[19.8px]"
           >
-            Visualiser notre établissement sur la carte
+            {t(`contact.map`)}
           </p>
         </div>
         <div className="lg:mt-0 md:w-[516px] lg:col-span-6 lg:flex">
@@ -93,7 +98,7 @@ const Contact = () => {
                 htmlFor="floating_first_name"
                 className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                Votre Nom *
+                {t(`contact.name`)} *
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -109,7 +114,7 @@ const Contact = () => {
                 htmlFor="floating_email"
                 className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                Votre E-mail *
+                {t(`contact.email`)} *
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -126,7 +131,7 @@ const Contact = () => {
                 htmlFor="floating_phone"
                 className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                Votre Téléphone *
+                {t(`contact.phone`)} *
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -143,7 +148,7 @@ const Contact = () => {
                 htmlFor="floating_sujet"
                 className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                Sujet du message *
+                {t(`contact.subject`)} *
               </label>
             </div>
             <div className="relative z-0 w-full mb-5 group">
@@ -159,7 +164,7 @@ const Contact = () => {
                 htmlFor="floating_text"
                 className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
-                écrivez votre message ici *
+                {t(`contact.message`)} *
               </label>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -171,7 +176,7 @@ const Contact = () => {
                   required
                 />
                 <label className="peer-focus:font-medium absolute font-normal text-[18px] leading-[25.2px] text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                  Enter le captcha code
+                {t(`contact.captcha`)}
                 </label>
               </div>
               <div className="relative z-0 w-full mb-5 group">
@@ -184,7 +189,7 @@ const Contact = () => {
               type="submit"
               className="text-gray-900 uppercase bg-white border font-quicksand border-[#3C3A34] focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-normal text-[18px] leading-[19.8px] px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
             >
-              Envoyer
+              {t(`contact.button`)}
             </button>
           </form>
         </div>

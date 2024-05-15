@@ -15,6 +15,7 @@ export interface aboutDetails {
 
 export interface Room {
   id: string;
+  img: string;
   title: string;
   surface: number;
   maxPersons: number;
@@ -23,10 +24,28 @@ export interface Room {
 
 export interface Service {
   id: string;
+  img: string;
   title: string;
   description: string;
   offert: string;
   // add other properties as needed
+}
+
+export interface Equipements {
+  id: number;
+  facilities: Facility[];
+}
+
+export interface Facility {
+  fcId: number;
+}
+
+export interface Gallery {
+  images: Image[];
+}
+
+export interface Image {
+  image: string;
 }
 
 export interface ofSpecial {
@@ -34,6 +53,10 @@ export interface ofSpecial {
   title: string;
   description: string;
   // add other properties as needed
+}
+
+export interface Contact {
+  etablissementId: number;
 }
 
 export interface Testi {
