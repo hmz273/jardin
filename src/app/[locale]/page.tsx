@@ -22,7 +22,6 @@ import { useEffect, useState } from "react";
 
 import TranslationsProvider from "./compoments/TranslationsProvider";
 import initializeTranslations from "../i18n";
-import Carou from "./compoments/carou";
 
 const i18nNamespaces = ["common"];
 
@@ -88,8 +87,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       resources={resources}
     >
     <Nav onTemplateChange={handleTemplateChange}/>
-    {/* <Carou/> */}
-    <Hero />
+      <Hero />
       {/* Render the selected template component  */}
       {SelectedTemplateComponent && <SelectedTemplateComponent  />}
     <Rooms/>
