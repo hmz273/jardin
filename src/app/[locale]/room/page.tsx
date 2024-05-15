@@ -13,7 +13,6 @@ import jardin from "../@jardin/page";
 import sirayane from "../@sirayane/page";
 import tempX from "../@tempX/page";
 import tempY from "../@tempY/page";
-import Carou from "../compoments/carou";
 
 
 const room = () => {
@@ -46,7 +45,7 @@ const room = () => {
   return (
     <div>
       <Nav onTemplateChange={handleTemplateChange}/>
-      <Carou />
+      <Hero />
       <Details />
       <Gallery />
       <Booking />
