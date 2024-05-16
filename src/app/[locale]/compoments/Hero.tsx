@@ -35,6 +35,8 @@ const getCurrentDate = () => {
   const { t } = useTranslation("common");
 
   return (
+
+    
     <section className=" text-gray-900">
       <div
         id="default-carousel"
