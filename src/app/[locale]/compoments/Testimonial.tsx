@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TestiModel from "../Models/TestiModel";
 import { commentData } from "@/constants";
 import { useTranslation } from "react-i18next";
@@ -7,13 +7,17 @@ const Testimonial = () => {
 
 
   const { t } = useTranslation('common');
-  const [filterByType, setFilterByType] = useState(null); // State to hold the selected filter type
+  const [filterByType, setFilterByType] = useState(null);
 
-  // Extract unique comment types from commentData
   const commentTypes = Array.from(new Set(commentData.map(comment => comment.typeId)));
 
+  // Set default filter to the first tab ID
+  if (!filterByType && commentTypes.length > 0) {
+    setFilterByType(commentTypes[0]);
+  }
+
   const handleFilterChange = (typeId) => {
-    setFilterByType(typeId === filterByType ? null : typeId); // Toggle filter
+    setFilterByType(typeId);
   };
 
   const filteredComments = filterByType
@@ -110,7 +114,7 @@ const Testimonial = () => {
 
           {commentTypes.map(typeId => (
             <div
-            key={typeId}
+              key={typeId}
               className="hidden  rounded-lg w-full bg-[#F4F1E8]"
               id={t(`commentTypes.${typeId}`)}
               role="tabpanel"
@@ -127,15 +131,14 @@ const Testimonial = () => {
                   {filteredComments.map(comment => (
 
                   <div
-                  key={comment.id}
-
                     className="hidden duration-700 ease-in-out bg-transparent"
                     data-carousel-item
                   >
-                    <div className="max-w-screen-xl px-4  mx-auto text-center">
+                    <div
+                    key={comment.id} className="max-w-screen-xl px-4  mx-auto text-center">
                       <figure className="max-w-screen-md mx-auto">
                         <p className="md:mt-[6px] md:mb-[17px] font-normal text-[30px] leading-[17.33px] text-[#3C3A34]">
-                        {t(`commentTypes.${comment.typeId}`) === "Booking" ? <span>{t(`comments.${comment.id}.score`)}/10</span> : <span>{t(`comments.${comment.id}.score`)}/5</span>}
+                        {t(`commentTypes.${comment.typeId}`) === "Commentaire-De-Booking" ? <span>{t(`comments.${comment.id}.score`)}/10</span> : <span>{t(`comments.${comment.id}.score`)}/5</span>}
                         </p>
                         <p className="tracking-normal md:mb-[16px] font-normal text-[28px] leading-[30.8px] text-[#3C3A34] py-4">
                         {t(`comments.${comment.id}.name`)} - {t(`commentTypes.${typeId}`)}

@@ -168,7 +168,8 @@
   "commentTypes": {
     "1": "Commentaire-De-TripAdvisor",
     "2": "Certificats-Dexcellence", 
-    "3": "Commentaire-De-Booking"
+    "3": "Commentaire-De-Booking",
+    "4": "Commentaire"
   },
   "comments": {
     "title": "Customer Reviews",
@@ -180,8 +181,8 @@
       "text": "Wonderful hotel with excellent staff. The food was delicious and the games room was a bonus for entertaining the teenagers. We were made to feel extremely welcome and the free shuttle made getting around very easy"
     },
     "3133545": {
-      "name": "Caroline D",
-      "score": 3,
+      "name": "CarLo",
+      "score": 2,
       "title": "TripAdvisor",
       "text": "Wonderful hotel with excellent staff. The food was delicious and the games room was a bonus for entertaining the teenagers. We were made to feel extremely welcome and the free shuttle made getting around very easy"
     },

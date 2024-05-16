@@ -147,19 +147,9 @@ export const ofSpecialData: ofSpecial[] = [
   },
 ];
 
-export const comments = [
-  { id: "3133543", type: "trip" },
-  { id: "3133544", type: "trip" },
-  { id: "4704636", type: "booking" },
-  { id: "4704637", type: "booking" },
-];
-
-// index.ts
 interface Comment {
   id: number;
   typeId: number;
-  // title: string;
-  // text: string;
 }
 
 export const commentData: Comment[] = [
@@ -186,7 +176,7 @@ export const commentData: Comment[] = [
   {
     id: 3133546,
     typeId: 3,
-  },
+  }
 ];
 
 export const equipementsData: Equipements[] = [
