@@ -11,7 +11,7 @@ const Services = () => {
 
   return (
     <>
-      <section className="md:mt-[92px]">
+      <section id="services" className="md:mt-[92px]">
         <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
           <div className="mx-auto md:mb-[41px] max-w-screen-sm">
             <h2 className="mb-4 tracking-normal capitalize font-normal text-[58px] leading-[63.8px]">

@@ -1,4 +1,5 @@
 import React from "react";
+import { reseausocial } from "@/constants"
 
 const Footer = () => {
   return (
@@ -34,17 +35,17 @@ const Footer = () => {
           <div className="pl-[111px]">
             <ul>
               <li className="mb-4">
-                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
+                <a href="#rooms" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Nos chambres
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
+                <a href="#services" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Nos services
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
+                <a href="#offers" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Offres
                 </a>
               </li>
@@ -54,12 +55,12 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
+                <a href="#gellery" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Galerie
                 </a>
               </li>
               <li className="mb-4">
-                <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
+                <a href="#contact" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Contact
                 </a>
               </li>
@@ -67,7 +68,14 @@ const Footer = () => {
           </div>
           <div className="pl-[113px]">
             <ul className="text-gray-500 grid grid-cols-1 md:grid-cols-1 font-medium">
-              <li className="mb-4 space-x-2 flex">
+
+            {reseausocial.map((link, index) => (
+          <li key={index} className="mb-4 space-x-2 flex">
+            <a href={link.ehrsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">{link.rsTitre}</a>
+          </li>
+        ))}
+
+              {/* <li className="mb-4 space-x-2 flex">
                 <svg
                   width="22"
                   height="23"
@@ -101,7 +109,7 @@ const Footer = () => {
                 <a href="#" className="hover:underline font-normal text-[18px] leading-[28.8px] text-[#13191D]">
                   Instagram
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

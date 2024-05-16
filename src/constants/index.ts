@@ -14,6 +14,7 @@ import {
   TradFr,
   TradAr,
   Contact,
+  ReseausocialItem
 } from "../types";
 
 export const roomDetailsData: roomDetails = {
@@ -632,6 +633,25 @@ export const gallery: Gallery[] = [
 export const contact: Contact = {
   etablissementId: 11242,
 };
+
+export const reseausocial: ReseausocialItem[] = [
+  {
+    ehrsUrl: "https://www.facebook.com/sirayanehotel/",
+    rsTitre: "Facebook"
+  },
+  {
+    ehrsUrl: "https://www.pinterest.com/sirayane/",
+    rsTitre: "Pinterest"
+  },
+  {
+    ehrsUrl: "https://www.instagram.com/sirayaneboutiquehotel/",
+    rsTitre: "Instagram"
+  },
+  {
+    ehrsUrl: "https://goo.gl/maps/uUgtGjAGE9oMyj949",
+    rsTitre: "Google"
+  }
+];
 
 export const siteinfo: Siteinfo = {
   pTemplate: "jardin",

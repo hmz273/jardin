@@ -5,7 +5,7 @@ import { ofSpecialData } from "@/constants";
 
 const Offers = () => {
   return (
-    <section className="md:mt-[60px]">
+    <section id="offers" className="md:mt-[60px]">
       <div className="py-8 px-4 mx-auto max-w-screen-3xl text-center lg:py-16 lg:px-6">
         <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 tracking-normal font-normal text-[58px] text-[#13191D] leading-[63.8px]">

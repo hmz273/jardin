@@ -10,7 +10,7 @@ const Contact = () => {
 
 
   return (
-    <section className="bg-white">
+    <section id="contact" className="bg-white">
       <div className="grid md:w-[1073px] md:top-[9290.87px] md:left-[184px] max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto md:w-[445px] place-self-center lg:col-span-6">
           <h1 className="max-w-2xl capitalize mb-4 font-normal text-[42px] leading-[46.2px] tracking-wide text-[#3D505A]">

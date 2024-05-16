@@ -68,6 +68,11 @@ export interface Testi {
   // add other properties as needed
 }
 
+export interface ReseausocialItem {
+  ehrsUrl: string;
+  rsTitre: string;
+}
+
 export interface TradEn {
   title: string;
   description: string;

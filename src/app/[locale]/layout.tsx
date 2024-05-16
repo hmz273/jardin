@@ -26,7 +26,7 @@
     
 
     return (
-      <html lang={locale} dir={dir(locale)}>
+      <html lang={locale} dir={dir(locale)} className="scroll-smooth">
         <head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
