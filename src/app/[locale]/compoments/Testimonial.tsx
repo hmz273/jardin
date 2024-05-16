@@ -168,7 +168,7 @@ const Testimonial = () => {
                 {/* <!-- Slider controls --> */}
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-[75px] left-30  start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-[75px] left-30  start-0 z-30 flex items-center justify-center mt-60 px-4 cursor-pointer group focus:outline-none"
                   data-carousel-prev
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-full ">
@@ -190,7 +190,7 @@ const Testimonial = () => {
                 </button>
                 <button
                   type="button"
-                  className="absolute top-60 md:-top-[75px]  right-30 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  className="absolute top-60 md:-top-[75px]  right-30 end-0 z-30 flex items-center justify-center mt-60 px-4 cursor-pointer group focus:outline-none"
                   data-carousel-next
                 >
                   <span className="inline-flex items-center justify-center w-10 h-10">
